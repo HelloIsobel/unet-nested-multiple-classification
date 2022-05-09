@@ -73,19 +73,25 @@ def inference_one(net, image, device):
 def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--model', '-m', default='MODEL.pth',
+    # parser.add_argument('--model', '-m', default='MODEL.pth',
+    #                     metavar='FILE',
+    #                     help="Specify the file in which the model is stored")
+    # parser.add_argument('--input', '-i', dest='input', type=str, default='',
+    #                     help='Directory of input images')
+    # parser.add_argument('--output', '-o', dest='output', type=str, default='',
+    #                     help='Directory of ouput images')
+    parser.add_argument('--model', '-m', default='0501_bestmodel.pth',
                         metavar='FILE',
                         help="Specify the file in which the model is stored")
-    parser.add_argument('--input', '-i', dest='input', type=str, default='',
+    parser.add_argument('--input', '-i', dest='input', type=str, default='./data/test/input',
                         help='Directory of input images')
-    parser.add_argument('--output', '-o', dest='output', type=str, default='',
+    parser.add_argument('--output', '-o', dest='output', type=str, default='./data/test/output_resize',
                         help='Directory of ouput images')
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = get_args()
-
     input_imgs = os.listdir(args.input)
 
     net = eval(cfg.model)(cfg)
@@ -104,6 +110,9 @@ if __name__ == "__main__":
         img_path = osp.join(args.input, img_name)
         print(img_name)
         img = Image.open(img_path)
+        width, height = img.size
+        # 按比例缩小
+        img.thumbnail((width / 2, height / 2))
 
         mask = inference_one(net=net,
                              image=img,

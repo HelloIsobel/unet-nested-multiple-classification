@@ -12,29 +12,29 @@ import os
 class UNetConfig:
 
     def __init__(self,
-                 epochs = 100,  # Number of epochs
-                 batch_size = 2,    # Batch size
-                 validation = 10.0,   # Percent of the data that is used as validation (0-100)
-                 out_threshold = 0.5,
+                 epochs=50,  # Number of epochs
+                 batch_size=1,  # Batch size
+                 validation=10.0,  # Percent of the data that is used as validation (0-100)
+                 out_threshold=0.5,
 
                  optimizer='SGD',
-                 lr = 0.0001,     # learning rate
-                 lr_decay_milestones = [20, 50],
-                 lr_decay_gamma = 0.9,
+                 lr=0.0001,  # learning rate
+                 lr_decay_milestones=[20, 50],
+                 lr_decay_gamma=0.9,
                  weight_decay=1e-8,
                  momentum=0.9,
                  nesterov=True,
 
-                 n_channels = 3, # Number of channels in input images
-                 n_classes = 3,  # Number of classes in the segmentation
-                 scale = 1,    # Downscaling factor of the images
+                 n_channels=3,  # Number of channels in input images
+                 n_classes=3,  # Number of classes in the segmentation
+                 scale=1,  # Downscaling factor of the images
 
-                 load = False,   # Load model from a .pth file
-                 save_cp = True,
+                 load=False,  # Load model from a .pth file
+                 save_cp=True,
 
                  model='NestedUNet',
-                 bilinear = True,
-                 deepsupervision = True,
+                 bilinear=True,
+                 deepsupervision=True,
                  ):
         super(UNetConfig, self).__init__()
 

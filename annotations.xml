@@ -1,0 +1,1666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>24</id>
+      <name>Field Segmentation of Shuidaosuo 1</name>
+      <size>200</size>
+      <mode>interpolation</mode>
+      <overlap>5</overlap>
+      <bugtracker></bugtracker>
+      <created>2022-03-10 14:00:22.243221+00:00</created>
+      <updated>2022-05-03 02:21:30.682912+00:00</updated>
+      <subset>Train</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>1990</stop_frame>
+      <frame_filter>step=10</frame_filter>
+      <segments>
+        <segment>
+          <id>83</id>
+          <start>0</start>
+          <stop>99</stop>
+          <url>http://101.37.163.116:6701/?id=83</url>
+        </segment>
+        <segment>
+          <id>84</id>
+          <start>95</start>
+          <stop>194</stop>
+          <url>http://101.37.163.116:6701/?id=84</url>
+        </segment>
+        <segment>
+          <id>85</id>
+          <start>190</start>
+          <stop>199</stop>
+          <url>http://101.37.163.116:6701/?id=85</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>zeqingzhang</username>
+        <email>851879831@qq.com</email>
+      </owner>
+      <assignee>
+        <username>zeqingzhang</username>
+        <email>851879831@qq.com</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>field with crop</name>
+          <color>#f59331</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>field with no crop</name>
+          <color>#8c78f0</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>field boundary</name>
+          <color>#fa3253</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>navigation baseline</name>
+          <color>#3fc4d9</color>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+      <original_size>
+        <width>1280</width>
+        <height>960</height>
+      </original_size>
+    </task>
+    <dumped>2022-05-05 02:24:54.084432+00:00</dumped>
+    <source>test_2022-03-11-01-04-14.bag.avi</source>
+  </meta>
+  <track id="0" label="field boundary" source="manual">
+    <polygon frame="990" outside="0" occluded="0" keyframe="1" points="0.00,198.21;1280.00,117.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1000" outside="1" occluded="0" keyframe="1" points="0.00,198.21;1280.00,117.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="1" label="field with crop" source="manual">
+    <polygon frame="50" outside="0" occluded="0" keyframe="1" points="0.00,680.79;385.08,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="60" outside="1" occluded="0" keyframe="1" points="0.00,680.79;385.08,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="2" label="field with crop" source="manual">
+    <polygon frame="60" outside="0" occluded="0" keyframe="1" points="0.00,685.81;384.37,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="70" outside="1" occluded="0" keyframe="1" points="0.00,685.81;384.37,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="3" label="field with crop" source="manual">
+    <polygon frame="70" outside="0" occluded="0" keyframe="1" points="0.00,683.58;389.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="80" outside="1" occluded="0" keyframe="1" points="0.00,683.58;389.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="4" label="field with crop" source="manual">
+    <polygon frame="80" outside="0" occluded="0" keyframe="1" points="0.00,685.01;393.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="90" outside="1" occluded="0" keyframe="1" points="0.00,685.01;393.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="5" label="field with crop" source="manual">
+    <polygon frame="90" outside="0" occluded="0" keyframe="1" points="0.00,677.15;399.01,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="100" outside="1" occluded="0" keyframe="1" points="0.00,677.15;399.01,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="6" label="field with crop" source="manual">
+    <polygon frame="100" outside="0" occluded="0" keyframe="1" points="0.00,712.14;384.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="110" outside="1" occluded="0" keyframe="1" points="0.00,712.14;384.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="7" label="field with crop" source="manual">
+    <polygon frame="110" outside="0" occluded="0" keyframe="1" points="0.00,709.51;401.88,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="120" outside="1" occluded="0" keyframe="1" points="0.00,709.51;401.88,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="8" label="field with crop" source="manual">
+    <polygon frame="120" outside="0" occluded="0" keyframe="1" points="0.00,724.20;415.53,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="130" outside="1" occluded="0" keyframe="1" points="0.00,724.20;415.53,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="9" label="field with crop" source="manual">
+    <polygon frame="130" outside="0" occluded="0" keyframe="1" points="0.00,721.83;404.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="140" outside="1" occluded="0" keyframe="1" points="0.00,721.83;404.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="10" label="field with crop" source="manual">
+    <polygon frame="140" outside="0" occluded="0" keyframe="1" points="0.00,691.58;405.73,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="150" outside="1" occluded="0" keyframe="1" points="0.00,691.58;405.73,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="11" label="field with crop" source="manual">
+    <polygon frame="150" outside="0" occluded="0" keyframe="1" points="0.00,676.70;396.50,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="160" outside="1" occluded="0" keyframe="1" points="0.00,676.70;396.50,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="12" label="field with crop" source="manual">
+    <polygon frame="160" outside="0" occluded="0" keyframe="1" points="0.00,612.70;355.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="170" outside="1" occluded="0" keyframe="1" points="0.00,612.70;355.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="13" label="field with crop" source="manual">
+    <polygon frame="170" outside="0" occluded="0" keyframe="1" points="0.00,541.37;312.74,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="180" outside="1" occluded="0" keyframe="1" points="0.00,541.37;312.74,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="14" label="field with crop" source="manual">
+    <polygon frame="180" outside="0" occluded="0" keyframe="1" points="0.00,389.59;254.02,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="190" outside="1" occluded="0" keyframe="1" points="0.00,389.59;254.02,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="15" label="field with crop" source="manual">
+    <polygon frame="190" outside="0" occluded="0" keyframe="1" points="0.00,405.26;273.65,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="200" outside="1" occluded="0" keyframe="1" points="0.00,405.26;273.65,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="16" label="field with crop" source="manual">
+    <polygon frame="200" outside="0" occluded="0" keyframe="1" points="0.00,440.47;297.55,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="210" outside="1" occluded="0" keyframe="1" points="0.00,440.47;297.55,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="17" label="field with crop" source="manual">
+    <polygon frame="210" outside="0" occluded="0" keyframe="1" points="0.00,529.62;353.95,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="220" outside="1" occluded="0" keyframe="1" points="0.00,529.62;353.95,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="18" label="field with crop" source="manual">
+    <polygon frame="220" outside="0" occluded="0" keyframe="1" points="0.00,615.38;405.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="230" outside="1" occluded="0" keyframe="1" points="0.00,615.38;405.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="19" label="field with crop" source="manual">
+    <polygon frame="230" outside="0" occluded="0" keyframe="1" points="0.00,688.89;436.83,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="240" outside="1" occluded="0" keyframe="1" points="0.00,688.89;436.83,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="20" label="field with crop" source="manual">
+    <polygon frame="240" outside="0" occluded="0" keyframe="1" points="0.00,743.32;456.82,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="250" outside="1" occluded="0" keyframe="1" points="0.00,743.32;456.82,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="21" label="field with crop" source="manual">
+    <polygon frame="250" outside="0" occluded="0" keyframe="1" points="0.00,737.47;458.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="260" outside="1" occluded="0" keyframe="1" points="0.00,737.47;458.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="22" label="field with crop" source="manual">
+    <polygon frame="260" outside="0" occluded="0" keyframe="1" points="0.00,748.28;479.63,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="270" outside="1" occluded="0" keyframe="1" points="0.00,748.28;479.63,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="23" label="field with crop" source="manual">
+    <polygon frame="270" outside="0" occluded="0" keyframe="1" points="0.00,762.38;476.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="280" outside="1" occluded="0" keyframe="1" points="0.00,762.38;476.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="24" label="field with crop" source="manual">
+    <polygon frame="280" outside="0" occluded="0" keyframe="1" points="0.00,773.41;475.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="290" outside="1" occluded="0" keyframe="1" points="0.00,773.41;475.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="25" label="field with crop" source="manual">
+    <polygon frame="290" outside="0" occluded="0" keyframe="1" points="0.00,775.04;482.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="300" outside="1" occluded="0" keyframe="1" points="0.00,775.04;482.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="26" label="field with crop" source="manual">
+    <polygon frame="300" outside="0" occluded="0" keyframe="1" points="0.00,805.79;484.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="310" outside="1" occluded="0" keyframe="1" points="0.00,805.79;484.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="27" label="field with crop" source="manual">
+    <polygon frame="310" outside="0" occluded="0" keyframe="1" points="0.00,850.89;500.06,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="320" outside="1" occluded="0" keyframe="1" points="0.00,850.89;500.06,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="28" label="field with crop" source="manual">
+    <polygon frame="320" outside="0" occluded="0" keyframe="1" points="0.00,849.72;490.10,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="330" outside="1" occluded="0" keyframe="1" points="0.00,849.72;490.10,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="29" label="field with crop" source="manual">
+    <polygon frame="330" outside="0" occluded="0" keyframe="1" points="0.00,856.74;498.84,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="340" outside="1" occluded="0" keyframe="1" points="0.00,856.74;498.84,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="30" label="field with crop" source="manual">
+    <polygon frame="340" outside="0" occluded="0" keyframe="1" points="0.00,853.28;486.46,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="350" outside="1" occluded="0" keyframe="1" points="0.00,853.28;486.46,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="31" label="field with crop" source="manual">
+    <polygon frame="350" outside="0" occluded="0" keyframe="1" points="0.00,866.21;491.59,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="360" outside="1" occluded="0" keyframe="1" points="0.00,866.21;491.59,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="32" label="field with crop" source="manual">
+    <polygon frame="360" outside="0" occluded="0" keyframe="1" points="0.00,869.47;493.70,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="370" outside="1" occluded="0" keyframe="1" points="0.00,869.47;493.70,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="33" label="field with crop" source="manual">
+    <polygon frame="370" outside="0" occluded="0" keyframe="1" points="0.00,882.51;486.57,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="380" outside="1" occluded="0" keyframe="1" points="0.00,882.51;486.57,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="34" label="field with crop" source="manual">
+    <polygon frame="380" outside="0" occluded="0" keyframe="1" points="0.00,879.04;475.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="390" outside="1" occluded="0" keyframe="1" points="0.00,879.04;475.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="35" label="field with crop" source="manual">
+    <polygon frame="390" outside="0" occluded="0" keyframe="1" points="0.00,887.20;481.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="400" outside="1" occluded="0" keyframe="1" points="0.00,887.20;481.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="36" label="field with crop" source="manual">
+    <polygon frame="400" outside="0" occluded="0" keyframe="1" points="0.00,902.12;29.36,902.12;468.36,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="410" outside="1" occluded="0" keyframe="1" points="0.00,902.12;29.36,902.12;468.36,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="37" label="field with crop" source="manual">
+    <polygon frame="410" outside="0" occluded="0" keyframe="1" points="0.00,946.79;466.78,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="420" outside="1" occluded="0" keyframe="1" points="0.00,946.79;466.78,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="38" label="field with crop" source="manual">
+    <polygon frame="420" outside="0" occluded="0" keyframe="1" points="0.00,891.57;448.19,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="430" outside="1" occluded="0" keyframe="1" points="0.00,891.57;448.19,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="39" label="field with crop" source="manual">
+    <polygon frame="430" outside="0" occluded="0" keyframe="1" points="0.00,928.64;454.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="440" outside="1" occluded="0" keyframe="1" points="0.00,928.64;454.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="40" label="field with crop" source="manual">
+    <polygon frame="440" outside="0" occluded="0" keyframe="1" points="0.00,859.42;444.04,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="450" outside="1" occluded="0" keyframe="1" points="0.00,859.42;444.04,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="41" label="field with crop" source="manual">
+    <polygon frame="450" outside="0" occluded="0" keyframe="1" points="0.00,888.53;454.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="460" outside="1" occluded="0" keyframe="1" points="0.00,888.53;454.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="42" label="field with crop" source="manual">
+    <polygon frame="460" outside="0" occluded="0" keyframe="1" points="0.00,827.16;435.85,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="470" outside="1" occluded="0" keyframe="1" points="0.00,827.16;435.85,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="43" label="field with crop" source="manual">
+    <polygon frame="470" outside="0" occluded="0" keyframe="1" points="0.00,774.90;392.63,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="480" outside="1" occluded="0" keyframe="1" points="0.00,774.90;392.63,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="44" label="field with crop" source="manual">
+    <polygon frame="480" outside="0" occluded="0" keyframe="1" points="0.00,763.96;383.95,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="490" outside="1" occluded="0" keyframe="1" points="0.00,763.96;383.95,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="45" label="field with crop" source="manual">
+    <polygon frame="490" outside="0" occluded="0" keyframe="1" points="0.00,658.26;370.11,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="500" outside="1" occluded="0" keyframe="1" points="0.00,658.26;370.11,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="46" label="field with crop" source="manual">
+    <polygon frame="500" outside="0" occluded="0" keyframe="1" points="0.00,638.48;365.22,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="510" outside="1" occluded="0" keyframe="1" points="0.00,638.48;365.22,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="47" label="field with crop" source="manual">
+    <polygon frame="510" outside="0" occluded="0" keyframe="1" points="0.00,594.68;347.33,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="520" outside="1" occluded="0" keyframe="1" points="0.00,594.68;347.33,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="48" label="field with crop" source="manual">
+    <polygon frame="520" outside="0" occluded="0" keyframe="1" points="0.00,609.35;345.74,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="530" outside="1" occluded="0" keyframe="1" points="0.00,609.35;345.74,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="49" label="field with crop" source="manual">
+    <polygon frame="530" outside="0" occluded="0" keyframe="1" points="0.00,572.52;351.62,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="540" outside="1" occluded="0" keyframe="1" points="0.00,572.52;351.62,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="50" label="field with crop" source="manual">
+    <polygon frame="540" outside="0" occluded="0" keyframe="1" points="0.00,632.55;389.77,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="550" outside="1" occluded="0" keyframe="1" points="0.00,632.55;389.77,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="51" label="field with crop" source="manual">
+    <polygon frame="550" outside="0" occluded="0" keyframe="1" points="0.00,751.85;436.04,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="560" outside="1" occluded="0" keyframe="1" points="0.00,751.85;436.04,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="52" label="field with crop" source="manual">
+    <polygon frame="560" outside="0" occluded="0" keyframe="1" points="0.00,756.14;438.96,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="570" outside="1" occluded="0" keyframe="1" points="0.00,756.14;438.96,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="53" label="field with crop" source="manual">
+    <polygon frame="570" outside="0" occluded="0" keyframe="1" points="0.00,751.31;425.34,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="580" outside="1" occluded="0" keyframe="1" points="0.00,751.31;425.34,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="54" label="field with crop" source="manual">
+    <polygon frame="580" outside="0" occluded="0" keyframe="1" points="0.00,809.63;40.69,809.63;465.61,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="590" outside="1" occluded="0" keyframe="1" points="0.00,809.63;40.69,809.63;465.61,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="55" label="field with crop" source="manual">
+    <polygon frame="590" outside="0" occluded="0" keyframe="1" points="0.00,808.28;51.50,808.28;493.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="600" outside="1" occluded="0" keyframe="1" points="0.00,808.28;51.50,808.28;493.60,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="56" label="field with crop" source="manual">
+    <polygon frame="600" outside="0" occluded="0" keyframe="1" points="0.00,960.00;15.80,960.00;511.71,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="610" outside="1" occluded="0" keyframe="1" points="0.00,960.00;15.80,960.00;511.71,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="57" label="field with crop" source="manual">
+    <polygon frame="610" outside="0" occluded="0" keyframe="1" points="0.00,960.00;16.10,960.00;475.39,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="620" outside="1" occluded="0" keyframe="1" points="0.00,960.00;16.10,960.00;475.39,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="58" label="field with crop" source="manual">
+    <polygon frame="620" outside="0" occluded="0" keyframe="1" points="0.07,0.00;0.00,10.30;0.00,806.93;20.41,806.93;444.61,0.00" z_order="0">
+    </polygon>
+    <polygon frame="630" outside="1" occluded="0" keyframe="1" points="0.07,0.00;0.00,10.30;0.00,806.93;20.41,806.93;444.61,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="59" label="field with crop" source="manual">
+    <polygon frame="630" outside="0" occluded="0" keyframe="1" points="0.00,808.49;36.63,809.63;423.44,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="640" outside="1" occluded="0" keyframe="1" points="0.00,808.49;36.63,809.63;423.44,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="60" label="field with crop" source="manual">
+    <polygon frame="640" outside="0" occluded="0" keyframe="1" points="0.00,799.61;421.61,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="650" outside="1" occluded="0" keyframe="1" points="0.00,799.61;421.61,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="61" label="field with crop" source="manual">
+    <polygon frame="650" outside="0" occluded="0" keyframe="1" points="0.00,731.03;400.29,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="660" outside="1" occluded="0" keyframe="1" points="0.00,731.03;400.29,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="62" label="field with crop" source="manual">
+    <polygon frame="660" outside="0" occluded="0" keyframe="1" points="0.00,745.61;396.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="670" outside="1" occluded="0" keyframe="1" points="0.00,745.61;396.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="63" label="field with crop" source="manual">
+    <polygon frame="670" outside="0" occluded="0" keyframe="1" points="0.00,703.70;382.88,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="680" outside="1" occluded="0" keyframe="1" points="0.00,703.70;382.88,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="64" label="field with crop" source="manual">
+    <polygon frame="680" outside="0" occluded="0" keyframe="1" points="0.00,628.97;354.13,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="690" outside="1" occluded="0" keyframe="1" points="0.00,628.97;354.13,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="65" label="field with crop" source="manual">
+    <polygon frame="690" outside="0" occluded="0" keyframe="1" points="0.00,625.80;366.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="700" outside="1" occluded="0" keyframe="1" points="0.00,625.80;366.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="66" label="field with crop" source="manual">
+    <polygon frame="700" outside="0" occluded="0" keyframe="1" points="0.00,630.42;376.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="710" outside="1" occluded="0" keyframe="1" points="0.00,630.42;376.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="67" label="field with crop" source="manual">
+    <polygon frame="710" outside="0" occluded="0" keyframe="1" points="0.00,684.57;412.06,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="720" outside="1" occluded="0" keyframe="1" points="0.00,684.57;412.06,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="68" label="field with crop" source="manual">
+    <polygon frame="720" outside="0" occluded="0" keyframe="1" points="0.00,740.38;439.19,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="730" outside="1" occluded="0" keyframe="1" points="0.00,740.38;439.19,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="69" label="field with crop" source="manual">
+    <polygon frame="730" outside="0" occluded="0" keyframe="1" points="0.00,761.56;437.05,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="740" outside="1" occluded="0" keyframe="1" points="0.00,761.56;437.05,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="70" label="field with crop" source="manual">
+    <polygon frame="740" outside="0" occluded="0" keyframe="1" points="0.00,791.95;453.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="750" outside="1" occluded="0" keyframe="1" points="0.00,791.95;453.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="71" label="field with crop" source="manual">
+    <polygon frame="750" outside="0" occluded="0" keyframe="1" points="0.00,809.63;44.74,809.63;472.35,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="760" outside="1" occluded="0" keyframe="1" points="0.00,809.63;44.74,809.63;472.35,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="72" label="field with crop" source="manual">
+    <polygon frame="760" outside="0" occluded="0" keyframe="1" points="0.00,809.31;48.80,806.93;471.67,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="770" outside="1" occluded="0" keyframe="1" points="0.00,809.31;48.80,806.93;471.67,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="73" label="field with crop" source="manual">
+    <polygon frame="770" outside="0" occluded="0" keyframe="1" points="0.00,808.44;39.34,809.63;444.82,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="780" outside="1" occluded="0" keyframe="1" points="0.00,808.44;39.34,809.63;444.82,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="74" label="field with crop" source="manual">
+    <polygon frame="780" outside="0" occluded="0" keyframe="1" points="0.00,797.28;428.29,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="790" outside="1" occluded="0" keyframe="1" points="0.00,797.28;428.29,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="75" label="field with crop" source="manual">
+    <polygon frame="790" outside="0" occluded="0" keyframe="1" points="0.00,787.42;421.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="800" outside="1" occluded="0" keyframe="1" points="0.00,787.42;421.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="76" label="field with crop" source="manual">
+    <polygon frame="800" outside="0" occluded="0" keyframe="1" points="0.00,873.60;417.87,0.00;0.17,0.00" z_order="0">
+    </polygon>
+    <polygon frame="810" outside="1" occluded="0" keyframe="1" points="0.00,873.60;417.87,0.00;0.17,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="77" label="field with crop" source="manual">
+    <polygon frame="810" outside="0" occluded="0" keyframe="1" points="0.00,750.60;391.21,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="820" outside="1" occluded="0" keyframe="1" points="0.00,750.60;391.21,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="78" label="field with crop" source="manual">
+    <polygon frame="820" outside="0" occluded="0" keyframe="1" points="0.00,707.32;367.59,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="830" outside="1" occluded="0" keyframe="1" points="0.00,707.32;367.59,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="79" label="field with crop" source="manual">
+    <polygon frame="830" outside="0" occluded="0" keyframe="1" points="0.00,688.61;374.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="840" outside="1" occluded="0" keyframe="1" points="0.00,688.61;374.76,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="80" label="field with crop" source="manual">
+    <polygon frame="840" outside="0" occluded="0" keyframe="1" points="0.00,718.70;397.66,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="850" outside="1" occluded="0" keyframe="1" points="0.00,718.70;397.66,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="81" label="field with crop" source="manual">
+    <polygon frame="850" outside="0" occluded="0" keyframe="1" points="0.00,746.41;431.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="860" outside="1" occluded="0" keyframe="1" points="0.00,746.41;431.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="82" label="field with crop" source="manual">
+    <polygon frame="860" outside="0" occluded="0" keyframe="1" points="0.00,809.63;48.80,809.63;439.80,52.30;0.00,57.60" z_order="0">
+    </polygon>
+    <polygon frame="870" outside="1" occluded="0" keyframe="1" points="0.00,809.63;48.80,809.63;439.80,52.30;0.00,57.60" z_order="0">
+    </polygon>
+  </track>
+  <track id="83" label="field with crop" source="manual">
+    <polygon frame="870" outside="0" occluded="0" keyframe="1" points="0.00,808.39;47.45,809.63;397.00,103.90;0.00,106.80" z_order="0">
+    </polygon>
+    <polygon frame="880" outside="1" occluded="0" keyframe="1" points="0.00,808.39;47.45,809.63;397.00,103.90;0.00,106.80" z_order="0">
+    </polygon>
+  </track>
+  <track id="84" label="field with crop" source="manual">
+    <polygon frame="880" outside="0" occluded="0" keyframe="1" points="0.00,788.27;302.20,193.10;0.00,185.40" z_order="0">
+    </polygon>
+    <polygon frame="890" outside="1" occluded="0" keyframe="1" points="0.00,788.27;302.20,193.10;0.00,185.40" z_order="0">
+    </polygon>
+  </track>
+  <track id="85" label="field with crop" source="manual">
+    <polygon frame="890" outside="0" occluded="0" keyframe="1" points="0.00,749.85;188.20,349.00;0.00,175.30" z_order="0">
+    </polygon>
+    <polygon frame="900" outside="1" occluded="0" keyframe="1" points="0.00,749.85;188.20,349.00;0.00,175.30" z_order="0">
+    </polygon>
+  </track>
+  <track id="86" label="field boundary" source="manual">
+    <polygon frame="920" outside="0" occluded="0" keyframe="1" points="0.00,55.95;784.55,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="930" outside="1" occluded="0" keyframe="1" points="0.00,55.95;784.55,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="87" label="field boundary" source="manual">
+    <polygon frame="930" outside="0" occluded="0" keyframe="1" points="0.00,110.34;1280.00,0.27;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="940" outside="1" occluded="0" keyframe="1" points="0.00,110.34;1280.00,0.27;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="88" label="field boundary" source="manual">
+    <polygon frame="940" outside="0" occluded="0" keyframe="1" points="0.00,111.32;1280.00,23.89;1280.00,5.54;992.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="950" outside="1" occluded="0" keyframe="1" points="0.00,111.32;1280.00,23.89;1280.00,5.54;992.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="89" label="field boundary" source="manual">
+    <polygon frame="950" outside="0" occluded="0" keyframe="1" points="0.00,140.48;1280.00,52.51;1280.00,0.00;0.00,0.00;0.00,140.11" z_order="0">
+    </polygon>
+    <polygon frame="960" outside="1" occluded="0" keyframe="1" points="0.00,140.48;1280.00,52.51;1280.00,0.00;0.00,0.00;0.00,140.11" z_order="0">
+    </polygon>
+  </track>
+  <track id="90" label="field boundary" source="manual">
+    <polygon frame="960" outside="0" occluded="0" keyframe="1" points="0.00,132.25;1280.00,57.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="970" outside="1" occluded="0" keyframe="1" points="0.00,132.25;1280.00,57.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="91" label="field boundary" source="manual">
+    <polygon frame="970" outside="0" occluded="0" keyframe="1" points="0.00,142.05;1280.00,66.13;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="980" outside="1" occluded="0" keyframe="1" points="0.00,142.05;1280.00,66.13;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="92" label="field boundary" source="manual">
+    <polygon frame="980" outside="0" occluded="0" keyframe="1" points="0.00,164.50;1280.00,76.28;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="990" outside="1" occluded="0" keyframe="1" points="0.00,164.50;1280.00,76.28;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="93" label="field with crop" source="manual">
+    <polygon frame="0" outside="0" occluded="0" keyframe="1" points="0.00,670.69;395.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="10" outside="1" occluded="0" keyframe="1" points="0.00,670.69;395.80,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="94" label="field with crop" source="manual">
+    <polygon frame="10" outside="0" occluded="0" keyframe="1" points="0.00,664.40;392.83,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="20" outside="1" occluded="0" keyframe="1" points="0.00,664.40;392.83,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="95" label="field with crop" source="manual">
+    <polygon frame="20" outside="0" occluded="0" keyframe="1" points="0.00,674.71;382.94,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="30" outside="1" occluded="0" keyframe="1" points="0.00,674.71;382.94,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="96" label="field with crop" source="manual">
+    <polygon frame="30" outside="0" occluded="0" keyframe="1" points="0.00,663.19;395.93,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="40" outside="1" occluded="0" keyframe="1" points="0.00,663.19;395.93,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="97" label="field with crop" source="manual">
+    <polygon frame="40" outside="0" occluded="0" keyframe="1" points="0.00,694.84;370.15,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="50" outside="1" occluded="0" keyframe="1" points="0.00,694.84;370.15,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="98" label="field boundary" source="manual">
+    <polygon frame="1000" outside="0" occluded="0" keyframe="1" points="0.00,232.12;1280.00,143.72;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1010" outside="1" occluded="0" keyframe="1" points="0.00,232.12;1280.00,143.72;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="99" label="field boundary" source="manual">
+    <polygon frame="1010" outside="0" occluded="0" keyframe="1" points="0.00,257.75;1280.00,192.96;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1020" outside="1" occluded="0" keyframe="1" points="0.00,257.75;1280.00,192.96;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="100" label="field boundary" source="manual">
+    <polygon frame="1020" outside="0" occluded="0" keyframe="1" points="0.00,298.96;1280.00,230.39;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1030" outside="1" occluded="0" keyframe="1" points="0.00,298.96;1280.00,230.39;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="101" label="field boundary" source="manual">
+    <polygon frame="1030" outside="0" occluded="0" keyframe="1" points="0.00,300.93;1280.00,297.20;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1040" outside="1" occluded="0" keyframe="1" points="0.00,300.93;1280.00,297.20;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="102" label="field boundary" source="manual">
+    <polygon frame="1040" outside="0" occluded="0" keyframe="1" points="0.00,263.30;1280.00,402.45;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1050" outside="1" occluded="0" keyframe="1" points="0.00,263.30;1280.00,402.45;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="103" label="field boundary" source="manual">
+    <polygon frame="1050" outside="0" occluded="0" keyframe="1" points="0.00,223.47;1280.00,418.62;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1060" outside="1" occluded="0" keyframe="1" points="0.00,223.47;1280.00,418.62;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="104" label="field boundary" source="manual">
+    <polygon frame="1060" outside="0" occluded="0" keyframe="1" points="0.00,98.29;1280.00,482.54;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1070" outside="1" occluded="0" keyframe="1" points="0.00,98.29;1280.00,482.54;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="105" label="field boundary" source="manual">
+    <polygon frame="1070" outside="0" occluded="0" keyframe="1" points="0.00,65.31;197.24,16.63;1280.00,527.22;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1080" outside="1" occluded="0" keyframe="1" points="0.00,65.31;197.24,16.63;1280.00,527.22;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="106" label="field boundary" source="manual">
+    <polygon frame="1080" outside="0" occluded="0" keyframe="1" points="0.00,151.36;480.23,23.30;1280.00,442.41;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1090" outside="1" occluded="0" keyframe="1" points="0.00,151.36;480.23,23.30;1280.00,442.41;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="107" label="field boundary" source="manual">
+    <polygon frame="1090" outside="0" occluded="0" keyframe="1" points="0.00,165.29;727.18,20.63;1280.00,360.64;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1100" outside="1" occluded="0" keyframe="1" points="0.00,165.29;727.18,20.63;1280.00,360.64;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="108" label="field boundary" source="manual">
+    <polygon frame="1100" outside="0" occluded="0" keyframe="1" points="0.00,150.18;1035.54,70.02;1280.00,236.16;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1110" outside="1" occluded="0" keyframe="1" points="0.00,150.18;1035.54,70.02;1280.00,236.16;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="109" label="field boundary" source="manual">
+    <polygon frame="1110" outside="0" occluded="0" keyframe="1" points="0.00,149.79;1280.00,129.68;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1120" outside="1" occluded="0" keyframe="1" points="0.00,149.79;1280.00,129.68;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="110" label="field boundary" source="manual">
+    <polygon frame="1120" outside="0" occluded="0" keyframe="1" points="0.00,142.26;1280.00,158.41;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1130" outside="1" occluded="0" keyframe="1" points="0.00,142.26;1280.00,158.41;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="111" label="field boundary" source="manual">
+    <polygon frame="1130" outside="0" occluded="0" keyframe="1" points="0.00,179.82;1280.00,267.85;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1140" outside="1" occluded="0" keyframe="1" points="0.00,179.82;1280.00,267.85;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="112" label="field boundary" source="manual">
+    <polygon frame="1140" outside="0" occluded="0" keyframe="1" points="0.00,187.28;1280.00,336.31;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1150" outside="1" occluded="0" keyframe="1" points="0.00,187.28;1280.00,336.31;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="113" label="field boundary" source="manual">
+    <polygon frame="1150" outside="0" occluded="0" keyframe="1" points="0.00,209.77;1280.00,373.15;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1160" outside="1" occluded="0" keyframe="1" points="0.00,209.77;1280.00,373.15;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="114" label="field boundary" source="manual">
+    <polygon frame="1160" outside="0" occluded="0" keyframe="1" points="0.00,219.26;1280.00,468.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1170" outside="1" occluded="0" keyframe="1" points="0.00,219.26;1280.00,468.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="115" label="field boundary" source="manual">
+    <polygon frame="1170" outside="0" occluded="0" keyframe="1" points="274.81,0.00;1280.00,500.80;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1180" outside="1" occluded="0" keyframe="1" points="274.81,0.00;1280.00,500.80;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="116" label="field boundary" source="manual">
+    <polygon frame="1180" outside="0" occluded="0" keyframe="1" points="492.10,0.00;1280.00,474.13;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1190" outside="1" occluded="0" keyframe="1" points="492.10,0.00;1280.00,474.13;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="117" label="field with crop" source="manual">
+    <polygon frame="1190" outside="0" occluded="0" keyframe="1" points="0.00,343.62;177.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1200" outside="1" occluded="0" keyframe="1" points="0.00,343.62;177.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="118" label="field boundary" source="manual">
+    <polygon frame="1190" outside="0" occluded="0" keyframe="1" points="818.21,0.00;1280.00,350.96;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1200" outside="1" occluded="0" keyframe="1" points="818.21,0.00;1280.00,350.96;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="119" label="field with crop" source="manual">
+    <polygon frame="1200" outside="0" occluded="0" keyframe="1" points="25.81,960.00;466.46,0.00;0.00,0.00;0.00,590.53;16.47,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1210" outside="1" occluded="0" keyframe="1" points="25.81,960.00;466.46,0.00;0.00,0.00;0.00,590.53;16.47,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="120" label="field boundary" source="manual">
+    <polygon frame="1200" outside="0" occluded="0" keyframe="1" points="1206.43,0.00;1280.00,53.57;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1210" outside="1" occluded="0" keyframe="1" points="1206.43,0.00;1280.00,53.57;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="121" label="field boundary" source="manual">
+    <polygon frame="1210" outside="0" occluded="0" keyframe="1" points="1204.73,0.00;1280.00,66.72;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1220" outside="1" occluded="0" keyframe="1" points="1204.73,0.00;1280.00,66.72;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="122" label="field with crop" source="manual">
+    <polygon frame="1210" outside="0" occluded="0" keyframe="1" points="79.04,960.00;501.77,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1220" outside="1" occluded="0" keyframe="1" points="79.04,960.00;501.77,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="123" label="field with crop" source="manual">
+    <polygon frame="1220" outside="0" occluded="0" keyframe="1" points="20.94,960.00;494.40,0.00;0.00,0.00;0.00,809.67;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1230" outside="1" occluded="0" keyframe="1" points="20.94,960.00;494.40,0.00;0.00,0.00;0.00,809.67;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="124" label="field boundary" source="manual">
+    <polygon frame="1220" outside="0" occluded="0" keyframe="1" points="1173.85,0.00;1280.00,76.37;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1230" outside="1" occluded="0" keyframe="1" points="1173.85,0.00;1280.00,76.37;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="125" label="field boundary" source="manual">
+    <polygon frame="1230" outside="0" occluded="0" keyframe="1" points="1133.72,0.00;1280.00,106.31;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1240" outside="1" occluded="0" keyframe="1" points="1133.72,0.00;1280.00,106.31;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="126" label="field with crop" source="manual">
+    <polygon frame="1230" outside="0" occluded="0" keyframe="1" points="0.00,905.00;424.54,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1240" outside="1" occluded="0" keyframe="1" points="0.00,905.00;424.54,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="127" label="field boundary" source="manual">
+    <polygon frame="1240" outside="0" occluded="0" keyframe="1" points="1119.70,0.00;1280.00,146.94;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1250" outside="1" occluded="0" keyframe="1" points="1119.70,0.00;1280.00,146.94;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="128" label="field with crop" source="manual">
+    <polygon frame="1240" outside="0" occluded="0" keyframe="1" points="0.00,875.09;419.81,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1250" outside="1" occluded="0" keyframe="1" points="0.00,875.09;419.81,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="129" label="field with crop" source="manual">
+    <polygon frame="1250" outside="0" occluded="0" keyframe="1" points="0.00,813.04;407.21,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1260" outside="1" occluded="0" keyframe="1" points="0.00,813.04;407.21,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="130" label="field boundary" source="manual">
+    <polygon frame="1250" outside="0" occluded="0" keyframe="1" points="1099.14,0.00;1280.00,150.91;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1260" outside="1" occluded="0" keyframe="1" points="1099.14,0.00;1280.00,150.91;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="131" label="field boundary" source="manual">
+    <polygon frame="1260" outside="0" occluded="0" keyframe="1" points="1099.37,0.00;1280.00,154.56;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1270" outside="1" occluded="0" keyframe="1" points="1099.37,0.00;1280.00,154.56;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="132" label="field with crop" source="manual">
+    <polygon frame="1260" outside="0" occluded="0" keyframe="1" points="0.00,795.55;402.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1270" outside="1" occluded="0" keyframe="1" points="0.00,795.55;402.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="133" label="field boundary" source="manual">
+    <polygon frame="1270" outside="0" occluded="0" keyframe="1" points="1131.21,0.00;1280.00,123.68;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1280" outside="1" occluded="0" keyframe="1" points="1131.21,0.00;1280.00,123.68;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="134" label="field with crop" source="manual">
+    <polygon frame="1270" outside="0" occluded="0" keyframe="1" points="0.00,818.43;395.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1280" outside="1" occluded="0" keyframe="1" points="0.00,818.43;395.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="135" label="field boundary" source="manual">
+    <polygon frame="1280" outside="0" occluded="0" keyframe="1" points="1126.75,0.00;1280.00,138.83;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1290" outside="1" occluded="0" keyframe="1" points="1126.75,0.00;1280.00,138.83;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="136" label="field with crop" source="manual">
+    <polygon frame="1280" outside="0" occluded="0" keyframe="1" points="0.00,838.70;415.23,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1290" outside="1" occluded="0" keyframe="1" points="0.00,838.70;415.23,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="137" label="field boundary" source="manual">
+    <polygon frame="1290" outside="0" occluded="0" keyframe="1" points="1104.19,0.00;1280.00,147.22;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1300" outside="1" occluded="0" keyframe="1" points="1104.19,0.00;1280.00,147.22;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="138" label="field with crop" source="manual">
+    <polygon frame="1290" outside="0" occluded="0" keyframe="1" points="0.00,878.93;413.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1300" outside="1" occluded="0" keyframe="1" points="0.00,878.93;413.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="139" label="field with crop" source="manual">
+    <polygon frame="1300" outside="0" occluded="0" keyframe="1" points="0.00,894.15;432.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1310" outside="1" occluded="0" keyframe="1" points="0.00,894.15;432.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="140" label="field boundary" source="manual">
+    <polygon frame="1300" outside="0" occluded="0" keyframe="1" points="1106.51,0.00;1280.00,155.93;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1310" outside="1" occluded="0" keyframe="1" points="1106.51,0.00;1280.00,155.93;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="141" label="field boundary" source="manual">
+    <polygon frame="1310" outside="0" occluded="0" keyframe="1" points="1162.45,0.00;1280.00,108.78;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1320" outside="1" occluded="0" keyframe="1" points="1162.45,0.00;1280.00,108.78;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="142" label="field with crop" source="manual">
+    <polygon frame="1310" outside="0" occluded="0" keyframe="1" points="0.00,888.01;422.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1320" outside="1" occluded="0" keyframe="1" points="0.00,888.01;422.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="143" label="field with crop" source="manual">
+    <polygon frame="1320" outside="0" occluded="0" keyframe="1" points="0.00,900.66;443.93,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1330" outside="1" occluded="0" keyframe="1" points="0.00,900.66;443.93,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="144" label="field boundary" source="manual">
+    <polygon frame="1320" outside="0" occluded="0" keyframe="1" points="1192.40,0.00;1280.00,68.83;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1330" outside="1" occluded="0" keyframe="1" points="1192.40,0.00;1280.00,68.83;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="145" label="field boundary" source="manual">
+    <polygon frame="1330" outside="0" occluded="0" keyframe="1" points="1184.37,0.00;1280.00,96.43;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1340" outside="1" occluded="0" keyframe="1" points="1184.37,0.00;1280.00,96.43;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="146" label="field with crop" source="manual">
+    <polygon frame="1330" outside="0" occluded="0" keyframe="1" points="29.01,960.00;498.65,0.00;0.00,0.00;0.00,758.26;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1340" outside="1" occluded="0" keyframe="1" points="29.01,960.00;498.65,0.00;0.00,0.00;0.00,758.26;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="147" label="field with crop" source="manual">
+    <polygon frame="1340" outside="0" occluded="0" keyframe="1" points="38.99,960.00;502.54,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1350" outside="1" occluded="0" keyframe="1" points="38.99,960.00;502.54,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="148" label="field boundary" source="manual">
+    <polygon frame="1340" outside="0" occluded="0" keyframe="1" points="1171.40,0.00;1280.00,104.18;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1350" outside="1" occluded="0" keyframe="1" points="1171.40,0.00;1280.00,104.18;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="149" label="field with crop" source="manual">
+    <polygon frame="1350" outside="0" occluded="0" keyframe="1" points="30.62,960.00;477.23,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1360" outside="1" occluded="0" keyframe="1" points="30.62,960.00;477.23,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="150" label="field boundary" source="manual">
+    <polygon frame="1350" outside="0" occluded="0" keyframe="1" points="1175.69,0.00;1280.00,97.65;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1360" outside="1" occluded="0" keyframe="1" points="1175.69,0.00;1280.00,97.65;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="151" label="field boundary" source="manual">
+    <polygon frame="1360" outside="0" occluded="0" keyframe="1" points="1146.61,0.00;1280.00,121.10;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1370" outside="1" occluded="0" keyframe="1" points="1146.61,0.00;1280.00,121.10;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="152" label="field with crop" source="manual">
+    <polygon frame="1360" outside="0" occluded="0" keyframe="1" points="0.00,918.80;444.40,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1370" outside="1" occluded="0" keyframe="1" points="0.00,918.80;444.40,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="153" label="field boundary" source="manual">
+    <polygon frame="1370" outside="0" occluded="0" keyframe="1" points="1140.49,0.00;1280.00,137.84;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1380" outside="1" occluded="0" keyframe="1" points="1140.49,0.00;1280.00,137.84;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="154" label="field with crop" source="manual">
+    <polygon frame="1370" outside="0" occluded="0" keyframe="1" points="0.00,906.99;464.75,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1380" outside="1" occluded="0" keyframe="1" points="0.00,906.99;464.75,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="155" label="field boundary" source="manual">
+    <polygon frame="1380" outside="0" occluded="0" keyframe="1" points="1133.80,0.00;1280.00,144.39;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1390" outside="1" occluded="0" keyframe="1" points="1133.80,0.00;1280.00,144.39;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="156" label="field with crop" source="manual">
+    <polygon frame="1380" outside="0" occluded="0" keyframe="1" points="0.00,852.86;426.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1390" outside="1" occluded="0" keyframe="1" points="0.00,852.86;426.43,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="157" label="field boundary" source="manual">
+    <polygon frame="1390" outside="0" occluded="0" keyframe="1" points="1119.17,0.00;1280.00,140.26;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1400" outside="1" occluded="0" keyframe="1" points="1119.17,0.00;1280.00,140.26;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="158" label="field with crop" source="manual">
+    <polygon frame="1390" outside="0" occluded="0" keyframe="1" points="0.00,844.60;407.81,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1400" outside="1" occluded="0" keyframe="1" points="0.00,844.60;407.81,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="159" label="field boundary" source="manual">
+    <polygon frame="1400" outside="0" occluded="0" keyframe="1" points="1013.78,0.00;1280.00,191.68;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1410" outside="1" occluded="0" keyframe="1" points="1013.78,0.00;1280.00,191.68;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="160" label="field with crop" source="manual">
+    <polygon frame="1400" outside="0" occluded="0" keyframe="1" points="0.00,786.20;406.41,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1410" outside="1" occluded="0" keyframe="1" points="0.00,786.20;406.41,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="161" label="field boundary" source="manual">
+    <polygon frame="1410" outside="0" occluded="0" keyframe="1" points="1000.53,0.00;1280.00,195.93;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1420" outside="1" occluded="0" keyframe="1" points="1000.53,0.00;1280.00,195.93;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="162" label="field with crop" source="manual">
+    <polygon frame="1410" outside="0" occluded="0" keyframe="1" points="0.00,731.03;406.09,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1420" outside="1" occluded="0" keyframe="1" points="0.00,731.03;406.09,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="163" label="field boundary" source="manual">
+    <polygon frame="1420" outside="0" occluded="0" keyframe="1" points="1032.63,0.00;1280.00,190.05;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1430" outside="1" occluded="0" keyframe="1" points="1032.63,0.00;1280.00,190.05;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="164" label="field with crop" source="manual">
+    <polygon frame="1420" outside="0" occluded="0" keyframe="1" points="0.00,767.34;419.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1430" outside="1" occluded="0" keyframe="1" points="0.00,767.34;419.68,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="165" label="field boundary" source="manual">
+    <polygon frame="1430" outside="0" occluded="0" keyframe="1" points="1132.82,0.00;1280.00,167.45;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1440" outside="1" occluded="0" keyframe="1" points="1132.82,0.00;1280.00,167.45;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="166" label="field with crop" source="manual">
+    <polygon frame="1430" outside="0" occluded="0" keyframe="1" points="0.00,890.27;475.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1440" outside="1" occluded="0" keyframe="1" points="0.00,890.27;475.49,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="167" label="field with crop" source="manual">
+    <polygon frame="1440" outside="0" occluded="0" keyframe="1" points="0.00,881.82;466.85,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1450" outside="1" occluded="0" keyframe="1" points="0.00,881.82;466.85,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="168" label="field boundary" source="manual">
+    <polygon frame="1440" outside="0" occluded="0" keyframe="1" points="1118.73,0.00;1280.00,166.25;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1450" outside="1" occluded="0" keyframe="1" points="1118.73,0.00;1280.00,166.25;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="169" label="field boundary" source="manual">
+    <polygon frame="1450" outside="0" occluded="0" keyframe="1" points="1137.01,0.00;1280.00,162.85;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1460" outside="1" occluded="0" keyframe="1" points="1137.01,0.00;1280.00,162.85;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="170" label="field with crop" source="manual">
+    <polygon frame="1450" outside="0" occluded="0" keyframe="1" points="0.00,873.96;466.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1460" outside="1" occluded="0" keyframe="1" points="0.00,873.96;466.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="171" label="field with crop" source="manual">
+    <polygon frame="1460" outside="0" occluded="0" keyframe="1" points="0.00,899.49;462.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1470" outside="1" occluded="0" keyframe="1" points="0.00,899.49;462.64,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="172" label="field boundary" source="manual">
+    <polygon frame="1460" outside="0" occluded="0" keyframe="1" points="1128.47,0.00;1280.00,185.44;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1470" outside="1" occluded="0" keyframe="1" points="1128.47,0.00;1280.00,185.44;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="173" label="field boundary" source="manual">
+    <polygon frame="1470" outside="0" occluded="0" keyframe="1" points="1177.60,0.00;1280.00,114.61;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1480" outside="1" occluded="0" keyframe="1" points="1177.60,0.00;1280.00,114.61;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="174" label="field with crop" source="manual">
+    <polygon frame="1470" outside="0" occluded="0" keyframe="1" points="20.15,960.00;495.25,0.00;0.00,0.00;0.00,951.93;1.05,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1480" outside="1" occluded="0" keyframe="1" points="20.15,960.00;495.25,0.00;0.00,0.00;0.00,951.93;1.05,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="175" label="field with crop" source="manual">
+    <polygon frame="1480" outside="0" occluded="0" keyframe="1" points="0.00,939.45;463.31,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1490" outside="1" occluded="0" keyframe="1" points="0.00,939.45;463.31,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="176" label="field boundary" source="manual">
+    <polygon frame="1480" outside="0" occluded="0" keyframe="1" points="1200.09,0.00;1280.00,70.69;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1490" outside="1" occluded="0" keyframe="1" points="1200.09,0.00;1280.00,70.69;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="177" label="field with crop" source="manual">
+    <polygon frame="1490" outside="0" occluded="0" keyframe="1" points="12.88,960.00;479.91,0.00;0.00,0.00;0.00,877.64;2.60,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1500" outside="1" occluded="0" keyframe="1" points="12.88,960.00;479.91,0.00;0.00,0.00;0.00,877.64;2.60,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="178" label="field boundary" source="manual">
+    <polygon frame="1490" outside="0" occluded="0" keyframe="1" points="1085.90,0.00;1280.00,163.20;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1500" outside="1" occluded="0" keyframe="1" points="1085.90,0.00;1280.00,163.20;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="179" label="field boundary" source="manual">
+    <polygon frame="1500" outside="0" occluded="0" keyframe="1" points="1108.16,0.00;1280.00,176.46;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1510" outside="1" occluded="0" keyframe="1" points="1108.16,0.00;1280.00,176.46;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="180" label="field with crop" source="manual">
+    <polygon frame="1500" outside="0" occluded="0" keyframe="1" points="0.00,909.19;451.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1510" outside="1" occluded="0" keyframe="1" points="0.00,909.19;451.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="181" label="field boundary" source="manual">
+    <polygon frame="1510" outside="0" occluded="0" keyframe="1" points="1069.30,0.00;1280.00,189.04;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1520" outside="1" occluded="0" keyframe="1" points="1069.30,0.00;1280.00,189.04;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="182" label="field with crop" source="manual">
+    <polygon frame="1510" outside="0" occluded="0" keyframe="1" points="0.00,788.77;404.16,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1520" outside="1" occluded="0" keyframe="1" points="0.00,788.77;404.16,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="183" label="field with crop" source="manual">
+    <polygon frame="1520" outside="0" occluded="0" keyframe="1" points="0.00,676.20;374.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1530" outside="1" occluded="0" keyframe="1" points="0.00,676.20;374.98,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="184" label="field boundary" source="manual">
+    <polygon frame="1520" outside="0" occluded="0" keyframe="1" points="1067.21,0.00;1280.00,206.00;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1530" outside="1" occluded="0" keyframe="1" points="1067.21,0.00;1280.00,206.00;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="185" label="field boundary" source="manual">
+    <polygon frame="1530" outside="0" occluded="0" keyframe="1" points="1037.92,0.00;1280.00,229.85;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1540" outside="1" occluded="0" keyframe="1" points="1037.92,0.00;1280.00,229.85;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="186" label="field with crop" source="manual">
+    <polygon frame="1530" outside="0" occluded="0" keyframe="1" points="0.00,708.59;403.52,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1540" outside="1" occluded="0" keyframe="1" points="0.00,708.59;403.52,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="187" label="field with crop" source="manual">
+    <polygon frame="1540" outside="0" occluded="0" keyframe="1" points="0.00,741.67;415.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1550" outside="1" occluded="0" keyframe="1" points="0.00,741.67;415.86,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="188" label="field boundary" source="manual">
+    <polygon frame="1540" outside="0" occluded="0" keyframe="1" points="1030.78,0.00;1280.00,208.44;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1550" outside="1" occluded="0" keyframe="1" points="1030.78,0.00;1280.00,208.44;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="189" label="field with crop" source="manual">
+    <polygon frame="1550" outside="0" occluded="0" keyframe="1" points="0.00,775.69;424.16,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1560" outside="1" occluded="0" keyframe="1" points="0.00,775.69;424.16,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="190" label="field boundary" source="manual">
+    <polygon frame="1550" outside="0" occluded="0" keyframe="1" points="1062.85,0.00;1280.00,219.28;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1560" outside="1" occluded="0" keyframe="1" points="1062.85,0.00;1280.00,219.28;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="191" label="field with crop" source="manual">
+    <polygon frame="1560" outside="0" occluded="0" keyframe="1" points="0.00,844.65;466.37,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1570" outside="1" occluded="0" keyframe="1" points="0.00,844.65;466.37,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="192" label="field boundary" source="manual">
+    <polygon frame="1560" outside="0" occluded="0" keyframe="1" points="1065.18,0.00;1280.00,228.75;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1570" outside="1" occluded="0" keyframe="1" points="1065.18,0.00;1280.00,228.75;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="193" label="field with crop" source="manual">
+    <polygon frame="1570" outside="0" occluded="0" keyframe="1" points="0.00,880.39;469.54,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1580" outside="1" occluded="0" keyframe="1" points="0.00,880.39;469.54,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="194" label="field boundary" source="manual">
+    <polygon frame="1570" outside="0" occluded="0" keyframe="1" points="1117.06,0.00;1280.00,188.26;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1580" outside="1" occluded="0" keyframe="1" points="1117.06,0.00;1280.00,188.26;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="195" label="field boundary" source="manual">
+    <polygon frame="1580" outside="0" occluded="0" keyframe="1" points="1137.13,0.00;1280.00,171.90;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1590" outside="1" occluded="0" keyframe="1" points="1137.13,0.00;1280.00,171.90;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="196" label="field with crop" source="manual">
+    <polygon frame="1580" outside="0" occluded="0" keyframe="1" points="0.00,892.85;485.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1590" outside="1" occluded="0" keyframe="1" points="0.00,892.85;485.20,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="197" label="field boundary" source="manual">
+    <polygon frame="1590" outside="0" occluded="0" keyframe="1" points="1159.65,0.00;1280.00,130.20;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1600" outside="1" occluded="0" keyframe="1" points="1159.65,0.00;1280.00,130.20;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="198" label="field with crop" source="manual">
+    <polygon frame="1590" outside="0" occluded="0" keyframe="1" points="2.78,960.00;496.31,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1600" outside="1" occluded="0" keyframe="1" points="2.78,960.00;496.31,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="199" label="field boundary" source="manual">
+    <polygon frame="1600" outside="0" occluded="0" keyframe="1" points="1094.04,0.00;1280.00,136.58;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1610" outside="1" occluded="0" keyframe="1" points="1094.04,0.00;1280.00,136.58;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="200" label="field with crop" source="manual">
+    <polygon frame="1600" outside="0" occluded="0" keyframe="1" points="0.00,956.11;479.75,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1610" outside="1" occluded="0" keyframe="1" points="0.00,956.11;479.75,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="201" label="field with crop" source="manual">
+    <polygon frame="1610" outside="0" occluded="0" keyframe="1" points="0.00,937.86;454.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1620" outside="1" occluded="0" keyframe="1" points="0.00,937.86;454.51,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="202" label="field boundary" source="manual">
+    <polygon frame="1610" outside="0" occluded="0" keyframe="1" points="1074.13,0.00;1280.00,151.28;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1620" outside="1" occluded="0" keyframe="1" points="1074.13,0.00;1280.00,151.28;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="203" label="field boundary" source="manual">
+    <polygon frame="1620" outside="0" occluded="0" keyframe="1" points="1101.17,0.00;1280.00,165.16;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1630" outside="1" occluded="0" keyframe="1" points="1101.17,0.00;1280.00,165.16;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="204" label="field with crop" source="manual">
+    <polygon frame="1620" outside="0" occluded="0" keyframe="1" points="0.00,891.61;459.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1630" outside="1" occluded="0" keyframe="1" points="0.00,891.61;459.30,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="205" label="field with crop" source="manual">
+    <polygon frame="1630" outside="0" occluded="0" keyframe="1" points="0.00,872.38;443.50,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1640" outside="1" occluded="0" keyframe="1" points="0.00,872.38;443.50,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="206" label="field boundary" source="manual">
+    <polygon frame="1630" outside="0" occluded="0" keyframe="1" points="1125.56,0.00;1280.00,139.83;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1640" outside="1" occluded="0" keyframe="1" points="1125.56,0.00;1280.00,139.83;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="207" label="field boundary" source="manual">
+    <polygon frame="1640" outside="0" occluded="0" keyframe="1" points="1095.67,0.00;1280.00,161.56;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1650" outside="1" occluded="0" keyframe="1" points="1095.67,0.00;1280.00,161.56;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="208" label="field with crop" source="manual">
+    <polygon frame="1640" outside="0" occluded="0" keyframe="1" points="0.00,916.48;454.13,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1650" outside="1" occluded="0" keyframe="1" points="0.00,916.48;454.13,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="209" label="field boundary" source="manual">
+    <polygon frame="1650" outside="0" occluded="0" keyframe="1" points="1122.48,0.00;1280.00,142.52;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1660" outside="1" occluded="0" keyframe="1" points="1122.48,0.00;1280.00,142.52;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="210" label="field with crop" source="manual">
+    <polygon frame="1650" outside="0" occluded="0" keyframe="1" points="0.00,930.44;452.52,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1660" outside="1" occluded="0" keyframe="1" points="0.00,930.44;452.52,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="211" label="field boundary" source="manual">
+    <polygon frame="1660" outside="0" occluded="0" keyframe="1" points="1145.10,0.00;1280.00,120.76;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1670" outside="1" occluded="0" keyframe="1" points="1145.10,0.00;1280.00,120.76;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="212" label="field with crop" source="manual">
+    <polygon frame="1660" outside="0" occluded="0" keyframe="1" points="28.20,960.00;484.56,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1670" outside="1" occluded="0" keyframe="1" points="28.20,960.00;484.56,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="213" label="field with crop" source="manual">
+    <polygon frame="1670" outside="0" occluded="0" keyframe="1" points="52.19,960.00;461.29,0.00;0.00,0.00;0.00,575.76;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1680" outside="1" occluded="0" keyframe="1" points="52.19,960.00;461.29,0.00;0.00,0.00;0.00,575.76;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="214" label="field boundary" source="manual">
+    <polygon frame="1670" outside="0" occluded="0" keyframe="1" points="1147.38,0.00;1280.00,121.19;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1680" outside="1" occluded="0" keyframe="1" points="1147.38,0.00;1280.00,121.19;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="215" label="field boundary" source="manual">
+    <polygon frame="1680" outside="0" occluded="0" keyframe="1" points="1159.79,0.00;1280.00,128.09;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1690" outside="1" occluded="0" keyframe="1" points="1159.79,0.00;1280.00,128.09;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="216" label="field with crop" source="manual">
+    <polygon frame="1680" outside="0" occluded="0" keyframe="1" points="0.00,960.00;447.80,0.00;0.00,0.00;0.00,635.21;0.00,929.60" z_order="0">
+    </polygon>
+    <polygon frame="1690" outside="1" occluded="0" keyframe="1" points="0.00,960.00;447.80,0.00;0.00,0.00;0.00,635.21;0.00,929.60" z_order="0">
+    </polygon>
+  </track>
+  <track id="217" label="field with crop" source="manual">
+    <polygon frame="1690" outside="0" occluded="0" keyframe="1" points="0.00,945.70;443.24,0.00;0.00,0.00;0.00,872.40" z_order="0">
+    </polygon>
+    <polygon frame="1700" outside="1" occluded="0" keyframe="1" points="0.00,945.70;443.24,0.00;0.00,0.00;0.00,872.40" z_order="0">
+    </polygon>
+  </track>
+  <track id="218" label="field boundary" source="manual">
+    <polygon frame="1690" outside="0" occluded="0" keyframe="1" points="1138.26,0.00;1280.00,187.30;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1700" outside="1" occluded="0" keyframe="1" points="1138.26,0.00;1280.00,187.30;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="219" label="field with crop" source="manual">
+    <polygon frame="1700" outside="0" occluded="0" keyframe="1" points="0.00,748.50;387.72,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1710" outside="1" occluded="0" keyframe="1" points="0.00,748.50;387.72,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="220" label="field boundary" source="manual">
+    <polygon frame="1700" outside="0" occluded="0" keyframe="1" points="1068.60,0.00;1280.00,232.65;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1710" outside="1" occluded="0" keyframe="1" points="1068.60,0.00;1280.00,232.65;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="221" label="field boundary" source="manual">
+    <polygon frame="1710" outside="0" occluded="0" keyframe="1" points="1070.52,0.00;1280.00,192.59;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1720" outside="1" occluded="0" keyframe="1" points="1070.52,0.00;1280.00,192.59;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="222" label="field with crop" source="manual">
+    <polygon frame="1710" outside="0" occluded="0" keyframe="1" points="0.00,699.70;382.39,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1720" outside="1" occluded="0" keyframe="1" points="0.00,699.70;382.39,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="223" label="field boundary" source="manual">
+    <polygon frame="1720" outside="0" occluded="0" keyframe="1" points="1053.55,0.00;1280.00,193.43;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1730" outside="1" occluded="0" keyframe="1" points="1053.55,0.00;1280.00,193.43;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="224" label="field with crop" source="manual">
+    <polygon frame="1720" outside="0" occluded="0" keyframe="1" points="0.00,707.60;402.02,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1730" outside="1" occluded="0" keyframe="1" points="0.00,707.60;402.02,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="225" label="field with crop" source="manual">
+    <polygon frame="1730" outside="0" occluded="0" keyframe="1" points="0.00,742.77;427.46,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1740" outside="1" occluded="0" keyframe="1" points="0.00,742.77;427.46,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="226" label="field boundary" source="manual">
+    <polygon frame="1730" outside="0" occluded="0" keyframe="1" points="1104.22,0.00;1280.00,178.07;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1740" outside="1" occluded="0" keyframe="1" points="1104.22,0.00;1280.00,178.07;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="227" label="field boundary" source="manual">
+    <polygon frame="1740" outside="0" occluded="0" keyframe="1" points="1159.91,0.00;1280.00,126.41;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1750" outside="1" occluded="0" keyframe="1" points="1159.91,0.00;1280.00,126.41;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="228" label="field with crop" source="manual">
+    <polygon frame="1740" outside="0" occluded="0" keyframe="1" points="0.00,821.40;459.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1750" outside="1" occluded="0" keyframe="1" points="0.00,821.40;459.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="229" label="field with crop" source="manual">
+    <polygon frame="1750" outside="0" occluded="0" keyframe="1" points="0.00,882.40;482.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1760" outside="1" occluded="0" keyframe="1" points="0.00,882.40;482.28,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="230" label="field with crop" source="manual">
+    <polygon frame="1760" outside="0" occluded="0" keyframe="1" points="4.16,960.00;494.68,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1770" outside="1" occluded="0" keyframe="1" points="4.16,960.00;494.68,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="231" label="field boundary" source="manual">
+    <polygon frame="1760" outside="0" occluded="0" keyframe="1" points="1174.14,0.00;1280.00,80.89;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1770" outside="1" occluded="0" keyframe="1" points="1174.14,0.00;1280.00,80.89;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="232" label="field with crop" source="manual">
+    <polygon frame="1770" outside="0" occluded="0" keyframe="1" points="8.41,960.00;486.74,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1780" outside="1" occluded="0" keyframe="1" points="8.41,960.00;486.74,0.00;0.00,0.00;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="233" label="field boundary" source="manual">
+    <polygon frame="1770" outside="0" occluded="0" keyframe="1" points="1187.73,0.00;1280.00,70.89;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1780" outside="1" occluded="0" keyframe="1" points="1187.73,0.00;1280.00,70.89;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="234" label="field with crop" source="manual">
+    <polygon frame="1780" outside="0" occluded="0" keyframe="1" points="33.12,960.00;461.19,0.00;0.00,0.00;0.00,908.06;0.00,960.00" z_order="0">
+    </polygon>
+    <polygon frame="1790" outside="1" occluded="0" keyframe="1" points="33.12,960.00;461.19,0.00;0.00,0.00;0.00,908.06;0.00,960.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="235" label="field boundary" source="manual">
+    <polygon frame="1780" outside="0" occluded="0" keyframe="1" points="1168.56,0.00;1280.00,109.40;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1790" outside="1" occluded="0" keyframe="1" points="1168.56,0.00;1280.00,109.40;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="236" label="field with crop" source="manual">
+    <polygon frame="1790" outside="0" occluded="0" keyframe="1" points="0.00,799.14;400.38,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1800" outside="1" occluded="0" keyframe="1" points="0.00,799.14;400.38,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="237" label="field boundary" source="manual">
+    <polygon frame="1790" outside="0" occluded="0" keyframe="1" points="1078.41,0.00;1280.00,157.04;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1800" outside="1" occluded="0" keyframe="1" points="1078.41,0.00;1280.00,157.04;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="238" label="field boundary" source="manual">
+    <polygon frame="1800" outside="0" occluded="0" keyframe="1" points="1043.22,0.00;1280.00,199.82;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1810" outside="1" occluded="0" keyframe="1" points="1043.22,0.00;1280.00,199.82;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="239" label="field with crop" source="manual">
+    <polygon frame="1800" outside="0" occluded="0" keyframe="1" points="0.00,735.70;368.90,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1810" outside="1" occluded="0" keyframe="1" points="0.00,735.70;368.90,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="240" label="field with crop" source="manual">
+    <polygon frame="1810" outside="0" occluded="0" keyframe="1" points="0.00,691.00;350.10,6.00;0.00,28.70" z_order="0">
+    </polygon>
+    <polygon frame="1820" outside="1" occluded="0" keyframe="1" points="0.00,691.00;350.10,6.00;0.00,28.70" z_order="0">
+    </polygon>
+  </track>
+  <track id="241" label="field boundary" source="manual">
+    <polygon frame="1810" outside="0" occluded="0" keyframe="1" points="1038.45,0.00;1280.00,186.61;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1820" outside="1" occluded="0" keyframe="1" points="1038.45,0.00;1280.00,186.61;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="242" label="field boundary" source="manual">
+    <polygon frame="1820" outside="0" occluded="0" keyframe="1" points="1083.57,0.00;1280.00,155.99;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1830" outside="1" occluded="0" keyframe="1" points="1083.57,0.00;1280.00,155.99;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="243" label="field with crop" source="manual">
+    <polygon frame="1820" outside="0" occluded="0" keyframe="1" points="0.00,700.58;355.00,82.70;0.00,92.00" z_order="0">
+    </polygon>
+    <polygon frame="1830" outside="1" occluded="0" keyframe="1" points="0.00,700.58;355.00,82.70;0.00,92.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="244" label="field with crop" source="manual">
+    <polygon frame="1830" outside="0" occluded="0" keyframe="1" points="0.00,731.74;312.87,150.18;107.96,201.10;0.00,206.68" z_order="0">
+    </polygon>
+    <polygon frame="1840" outside="1" occluded="0" keyframe="1" points="0.00,731.74;312.87,150.18;107.96,201.10;0.00,206.68" z_order="0">
+    </polygon>
+  </track>
+  <track id="245" label="field boundary" source="manual">
+    <polygon frame="1830" outside="0" occluded="0" keyframe="1" points="1081.55,0.00;1280.00,145.67;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1840" outside="1" occluded="0" keyframe="1" points="1081.55,0.00;1280.00,145.67;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="246" label="field with crop" source="manual">
+    <polygon frame="1840" outside="0" occluded="0" keyframe="1" points="0.00,737.83;214.97,341.23;163.95,343.40;56.83,480.63;0.00,593.88" z_order="0">
+    </polygon>
+    <polygon frame="1850" outside="1" occluded="0" keyframe="1" points="0.00,737.83;214.97,341.23;163.95,343.40;56.83,480.63;0.00,593.88" z_order="0">
+    </polygon>
+  </track>
+  <track id="247" label="field boundary" source="manual">
+    <polygon frame="1840" outside="0" occluded="0" keyframe="1" points="1068.91,0.00;1280.00,191.79;1280.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1850" outside="1" occluded="0" keyframe="1" points="1068.91,0.00;1280.00,191.79;1280.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="248" label="field with crop" source="manual">
+    <polygon frame="1850" outside="0" occluded="0" keyframe="1" points="0.00,828.78;56.79,694.34;0.00,690.86" z_order="0">
+    </polygon>
+    <polygon frame="1860" outside="1" occluded="0" keyframe="1" points="0.00,828.78;56.79,694.34;0.00,690.86" z_order="0">
+    </polygon>
+  </track>
+  <track id="249" label="field boundary" source="manual">
+    <polygon frame="1850" outside="0" occluded="0" keyframe="1" points="0.00,128.59;1185.05,104.73;1280.00,172.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1860" outside="1" occluded="0" keyframe="1" points="0.00,128.59;1185.05,104.73;1280.00,172.23;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="250" label="field boundary" source="manual">
+    <polygon frame="1860" outside="0" occluded="0" keyframe="1" points="0.00,200.72;1280.00,178.42;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1870" outside="1" occluded="0" keyframe="1" points="0.00,200.72;1280.00,178.42;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="251" label="field boundary" source="manual">
+    <polygon frame="1870" outside="0" occluded="0" keyframe="1" points="0.00,196.69;1280.00,174.49;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1880" outside="1" occluded="0" keyframe="1" points="0.00,196.69;1280.00,174.49;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="252" label="field boundary" source="manual">
+    <polygon frame="1880" outside="0" occluded="0" keyframe="1" points="0.00,199.18;1280.00,161.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1890" outside="1" occluded="0" keyframe="1" points="0.00,199.18;1280.00,161.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="253" label="field boundary" source="manual">
+    <polygon frame="1890" outside="0" occluded="0" keyframe="1" points="0.00,197.86;1280.00,157.11;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1900" outside="1" occluded="0" keyframe="1" points="0.00,197.86;1280.00,157.11;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="254" label="field boundary" source="manual">
+    <polygon frame="1900" outside="0" occluded="0" keyframe="1" points="0.00,204.70;1280.00,161.37;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1910" outside="1" occluded="0" keyframe="1" points="0.00,204.70;1280.00,161.37;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="255" label="field boundary" source="manual">
+    <polygon frame="1910" outside="0" occluded="0" keyframe="1" points="0.00,200.36;1280.00,150.93;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1920" outside="1" occluded="0" keyframe="1" points="0.00,200.36;1280.00,150.93;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="256" label="field boundary" source="manual">
+    <polygon frame="1920" outside="0" occluded="0" keyframe="1" points="0.00,201.71;1280.00,158.67;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1930" outside="1" occluded="0" keyframe="1" points="0.00,201.71;1280.00,158.67;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="257" label="field boundary" source="manual">
+    <polygon frame="1930" outside="0" occluded="0" keyframe="1" points="0.00,195.23;1280.00,145.62;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1940" outside="1" occluded="0" keyframe="1" points="0.00,195.23;1280.00,145.62;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="258" label="field boundary" source="manual">
+    <polygon frame="1940" outside="0" occluded="0" keyframe="1" points="0.00,198.00;1280.00,166.52;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1950" outside="1" occluded="0" keyframe="1" points="0.00,198.00;1280.00,166.52;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="259" label="field boundary" source="manual">
+    <polygon frame="990" outside="0" occluded="0" keyframe="1" points="0.00,193.57;1280.00,102.79;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1000" outside="1" occluded="0" keyframe="1" points="0.00,193.57;1280.00,102.79;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="260" label="field boundary" source="manual">
+    <polygon frame="1950" outside="0" occluded="0" keyframe="1" points="0.00,200.75;1280.00,156.70;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1960" outside="1" occluded="0" keyframe="1" points="0.00,200.75;1280.00,156.70;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="261" label="field boundary" source="manual">
+    <polygon frame="1960" outside="0" occluded="0" keyframe="1" points="0.00,202.31;1280.00,156.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1970" outside="1" occluded="0" keyframe="1" points="0.00,202.31;1280.00,156.04;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="262" label="field boundary" source="manual">
+    <polygon frame="1970" outside="0" occluded="0" keyframe="1" points="0.00,199.46;1280.00,160.79;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+    <polygon frame="1980" outside="1" occluded="0" keyframe="1" points="0.00,199.46;1280.00,160.79;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="263" label="field boundary" source="manual">
+    <polygon frame="1980" outside="0" occluded="0" keyframe="1" points="0.00,206.17;1280.00,159.81;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+  <track id="264" label="field boundary" source="manual">
+    <polygon frame="1990" outside="0" occluded="0" keyframe="1" points="0.00,198.15;1280.00,149.55;1280.00,0.00;0.00,0.00" z_order="0">
+    </polygon>
+  </track>
+</annotations>

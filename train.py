@@ -29,9 +29,23 @@ from config import UNetConfig
 from losses import LovaszLossSoftmax
 from losses import LovaszLossHinge
 from losses import dice_coeff
+import pandas as pd
 
+# from tool.functions import getExcel
 
 cfg = UNetConfig()
+
+
+def getExcel(features, excel_path, header=True):
+    """保存values到excel文件中"""
+    data = pd.DataFrame(features)
+    writer = pd.ExcelWriter(excel_path)
+    if header:
+        data.to_excel(writer, 'page_1', float_format='%.5f')
+    else:
+        data.to_excel(writer, 'page_1', float_format='%.5f', header=False, index=False)
+    writer.save()
+    writer.close()
 
 
 def train_net(net, cfg):
@@ -43,14 +57,14 @@ def train_net(net, cfg):
     train, val = random_split(dataset, [n_train, n_val])
 
     train_loader = DataLoader(train,
-                              batch_size=cfg.batch_size,
+                              batch_size=cfg.batch_size,  # TODO:set to smaller
                               shuffle=True,
-                              num_workers=8,
+                              num_workers=0,  # TODO:set to 0
                               pin_memory=True)
     val_loader = DataLoader(val,
-                            batch_size=cfg.batch_size,
+                            batch_size=cfg.batch_size,  # TODO:set to smaller
                             shuffle=False,
-                            num_workers=8,
+                            num_workers=0,  # TODO:set to 0
                             pin_memory=True)
 
     writer = SummaryWriter(comment=f'LR_{cfg.lr}_BS_{cfg.batch_size}_SCALE_{cfg.scale}')
@@ -84,24 +98,27 @@ def train_net(net, cfg):
 
     scheduler = optim.lr_scheduler.MultiStepLR(optimizer,
                                                milestones=cfg.lr_decay_milestones,
-                                               gamma = cfg.lr_decay_gamma)
+                                               gamma=cfg.lr_decay_gamma)
     if cfg.n_classes > 1:
-        criterion = LovaszLossSoftmax()
+        criterion = LovaszLossSoftmax()  # 基于IOU的损失函数lovaszSoftmax
     else:
         criterion = LovaszLossHinge()
 
+    best_loss = float("inf")
+    train_loss_value = []
+
     for epoch in range(cfg.epochs):
         net.train()
-
+        n, train_loss = 0.0, 0.0
         epoch_loss = 0
         with tqdm(total=n_train, desc=f'Epoch {epoch + 1}/{cfg.epochs}', unit='img') as pbar:
             for batch in train_loader:
                 batch_imgs = batch['image']
                 batch_masks = batch['mask']
                 assert batch_imgs.shape[1] == cfg.n_channels, \
-                        f'Network has been defined with {cfg.n_channels} input channels, ' \
-                        f'but loaded images have {batch_imgs.shape[1]} channels. Please check that ' \
-                        'the images are loaded correctly.'
+                    f'Network has been defined with {cfg.n_channels} input channels, ' \
+                    f'but loaded images have {batch_imgs.shape[1]} channels. Please check that ' \
+                    'the images are loaded correctly.'
 
                 batch_imgs = batch_imgs.to(device=device, dtype=torch.float32)
                 mask_type = torch.float32 if cfg.n_classes == 1 else torch.long
@@ -118,16 +135,24 @@ def train_net(net, cfg):
 
                 if cfg.deepsupervision:
                     loss = 0
-                    for inference_mask in inferences:
+                    for inference_mask in inferences:  # TODO: why not one image?
                         loss += criterion(inference_mask, masks)
                     loss /= len(inferences)
                 else:
                     loss = criterion(inferences, masks)
+                # __________________________________
+                if loss < best_loss:
+                    best_loss = loss
+                    torch.save(net.state_dict(), "0501_bestmodel.pth")
 
                 epoch_loss += loss.item()
+                n += masks.shape[0]
+
+                # __________________________________
+                # epoch_loss += loss.item()
                 writer.add_scalar('Loss/train', loss.item(), global_step)
                 writer.add_scalar('model/lr', optimizer.param_groups[0]['lr'], global_step)
-
+                # 设置进度条右边显示的信息
                 pbar.set_postfix(**{'loss (batch)': loss.item()})
 
                 optimizer.zero_grad()
@@ -149,7 +174,7 @@ def train_net(net, cfg):
 
                     writer.add_images('images', batch_imgs, global_step)
                     if cfg.deepsupervision:
-                            inference_masks = inference_masks[-1]
+                        inference_masks = inference_masks[-1]
                     if cfg.n_classes == 1:
                         # writer.add_images('masks/true', batch_masks, global_step)
                         inference_mask = torch.sigmoid(inference_masks) > cfg.out_threshold
@@ -162,9 +187,14 @@ def train_net(net, cfg):
                         inference_masks = torch.chunk(inference_masks, ids, dim=1)
                         for idx in range(0, len(inference_masks)):
                             inference_mask = torch.sigmoid(inference_masks[idx]) > cfg.out_threshold
-                            writer.add_images('masks/inference_'+str(idx),
+                            writer.add_images('masks/inference_' + str(idx),
                                               inference_mask,
                                               global_step)
+            train_loss = epoch_loss / n
+            train_loss_value.append(train_loss)
+
+        excel_path = '0501excel_loss_train.xlsx'
+        getExcel(train_loss_value, excel_path, header=False)
 
         if cfg.save_cp:
             try:
@@ -207,7 +237,8 @@ def eval_net(net, loader, device, n_val, cfg):
                     for true_mask, pred in zip(true_masks, masks_pred):
                         pred = (pred > cfg.out_threshold).float()
                         if cfg.n_classes > 1:
-                            sub_cross_entropy = F.cross_entropy(pred.unsqueeze(dim=0), true_mask.unsqueeze(dim=0).squeeze(1)).item()
+                            sub_cross_entropy = F.cross_entropy(pred.unsqueeze(dim=0),
+                                                                true_mask.unsqueeze(dim=0).squeeze(1)).item()
                         else:
                             sub_cross_entropy = dice_coeff(pred, true_mask.squeeze(dim=1)).item()
                         tot_cross_entropy += sub_cross_entropy
@@ -231,9 +262,9 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # device = torch.device('cpu')
-    logging.info(f'Using device {device}')
+    logging.info(f'Using device {device}')  # logging 日志输出
 
-    net = eval(cfg.model)(cfg)
+    net = eval(cfg.model)(cfg)  # eval() 函数用来执行一个字符串表达式，并返回表达式的值
     logging.info(f'Network:\n'
                  f'\t{cfg.model} model\n'
                  f'\t{cfg.n_channels} input channels\n'
@@ -253,9 +284,13 @@ if __name__ == '__main__':
     try:
         train_net(net=net, cfg=cfg)
     except KeyboardInterrupt:
+        '''
+        命令行程序运行期间，如果用户想终止程序，一般都会采用Ctrl-C快捷键，这个快捷键会引发python程序抛出KeyboardInterrupt异常。
+        我们可以捕获这个异常，在用户按下Ctrl-C的时候，进行一些清理工作。
+        '''
         torch.save(net.state_dict(), 'INTERRUPTED.pth')
         logging.info('Saved interrupt')
-        try:
-            sys.exit(0)
-        except SystemExit:
-            os._exit(0)
+    try:
+        sys.exit(0)
+    except SystemExit:
+        os._exit(0)

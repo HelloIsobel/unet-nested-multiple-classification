@@ -10,6 +10,7 @@ import argparse
 import logging
 import os
 import os.path as osp
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 import numpy as np
@@ -25,6 +26,7 @@ from utils.dataset import BasicDataset
 from config import UNetConfig
 
 cfg = UNetConfig()
+
 
 def inference_one(net, image, device):
     net.eval()
@@ -53,7 +55,7 @@ def inference_one(net, image, device):
                 transforms.ToTensor()
             ]
         )
-        
+
         if cfg.n_classes == 1:
             probs = tf(probs.cpu())
             mask = probs.squeeze().cpu().numpy()
@@ -66,17 +68,17 @@ def inference_one(net, image, device):
                 mask = mask > cfg.out_threshold
                 masks.append(mask)
             return masks
-  
-  
+
+
 def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--model', '-m', default='MODEL.pth',
+    parser.add_argument('--model', '-m', default='0501_bestmodel.pth',
                         metavar='FILE',
                         help="Specify the file in which the model is stored")
-    parser.add_argument('--input', '-i', dest='input', type=str, default='',
+    parser.add_argument('--input', '-i', dest='input', type=str, default='./data/test/input',
                         help='Directory of input images')
-    parser.add_argument('--output', '-o', dest='output', type=str, default='',
+    parser.add_argument('--output', '-o', dest='output', type=str, default='./data/test/output',
                         help='Directory of ouput images')
     return parser.parse_args()
 
@@ -92,7 +94,7 @@ if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')
     net.to(device=device)
-    net.load_state_dict(torch.load(args.model, map_location=device))
+    net.load_state_dict(torch.load(args.model, map_location=device))  # 将预训练的参数权重加载到新的模型之中
 
     logging.info("Model loaded !")
 
