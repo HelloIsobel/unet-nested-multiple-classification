@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f3f1bf3-24ca-43a1-966e-429c76ea38b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-xml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/segmentation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/segmentation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch01 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/ExtractTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/collect_imgs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/collect_output_resize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/flip_light.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/log.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/resize_img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/xmldirs2masks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/zzq_xml2masks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_loss.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/val_loss.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inference_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/inference_color.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xml2bw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmldirs2masks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zzq_xml2masks.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +54,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="450ca7de-117f-4589-be30-4c4d0b1feebd" />
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28PtMWRWsuLnxshLjKmJtP3Kgxd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../fieldseg" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,7 +87,73 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.xmldirs2masks">
+  <component name="RunManager" selected="Python.collect_output_resize">
+    <configuration name="ExtractTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="segmentation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Desktop\GitHub\Boundary_rice\Network\unet-nested-multiple-classification\ExtractTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="collect_output_resize" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="segmentation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/collect_output_resize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flip_light" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="segmentation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Desktop\GitHub\Boundary_rice\Network\unet-nested-multiple-classification\flip_light.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="inference_color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="segmentation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,79 +198,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="try-xml" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="segmentation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try-xml.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="xmldirs2masks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="segmentation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xmldirs2masks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zzq_xml2masks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="segmentation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zzq_xml2masks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.ExtractTest" />
+      <item itemvalue="Python.flip_light" />
+      <item itemvalue="Python.inference_color" />
+      <item itemvalue="Python.collect_output_resize" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.xmldirs2masks" />
-        <item itemvalue="Python.zzq_xml2masks" />
-        <item itemvalue="Python.try-xml" />
-        <item itemvalue="Python.train" />
+        <item itemvalue="Python.collect_output_resize" />
         <item itemvalue="Python.inference_color" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.ExtractTest" />
+        <item itemvalue="Python.flip_light" />
       </list>
     </recent_temporary>
   </component>
@@ -209,6 +236,8 @@
       <workItem from="1651929512765" duration="312000" />
       <workItem from="1651929833850" duration="1813000" />
       <workItem from="1651990507519" duration="27029000" />
+      <workItem from="1652334308417" duration="19955000" />
+      <workItem from="1652430698868" duration="61335000" />
     </task>
     <servers />
   </component>
@@ -228,64 +257,91 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2239" y="873" key="FileChooserDialogImpl" timestamp="1651834596219">
+    <state x="2052" y="808" width="807" height="682" key="#Deployment" timestamp="1652453669932">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state x="2239" y="873" key="FileChooserDialogImpl/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1651834596219" />
-    <state width="1040" height="251" key="GridCell.Tab.0.bottom" timestamp="1652092309919">
+    <state x="2052" y="808" width="807" height="682" key="#Deployment/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652453669932" />
+    <state x="1920" y="826" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1652518540371">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="251" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652092309919" />
-    <state width="1040" height="251" key="GridCell.Tab.0.center" timestamp="1652092309918">
+    <state x="1920" y="826" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652518540371" />
+    <state x="2142" y="952" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652341410167">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="251" key="GridCell.Tab.0.center/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652092309918" />
-    <state width="1040" height="251" key="GridCell.Tab.0.left" timestamp="1652092309918">
+    <state x="2142" y="952" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652341410167" />
+    <state x="2239" y="873" key="FileChooserDialogImpl" timestamp="1652841182082">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="251" key="GridCell.Tab.0.left/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652092309918" />
-    <state width="1040" height="251" key="GridCell.Tab.0.right" timestamp="1652092309918">
+    <state x="2239" y="873" key="FileChooserDialogImpl/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652841182082" />
+    <state width="1039" height="481" key="GridCell.Tab.0.bottom" timestamp="1652837884696">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="251" key="GridCell.Tab.0.right/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652092309918" />
-    <state width="1040" height="429" key="GridCell.Tab.1.bottom" timestamp="1652014067853">
+    <state width="1815" height="206" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170683" />
+    <state width="1039" height="481" key="GridCell.Tab.0.bottom/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837884696" />
+    <state width="1039" height="481" key="GridCell.Tab.0.center" timestamp="1652837884696">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="429" key="GridCell.Tab.1.bottom/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652014067853" />
-    <state width="1040" height="429" key="GridCell.Tab.1.center" timestamp="1652014067853">
+    <state width="1815" height="206" key="GridCell.Tab.0.center/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170683" />
+    <state width="1039" height="481" key="GridCell.Tab.0.center/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837884696" />
+    <state width="1039" height="481" key="GridCell.Tab.0.left" timestamp="1652837884695">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="429" key="GridCell.Tab.1.center/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652014067853" />
-    <state width="1040" height="429" key="GridCell.Tab.1.left" timestamp="1652014067853">
+    <state width="1815" height="206" key="GridCell.Tab.0.left/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170683" />
+    <state width="1039" height="481" key="GridCell.Tab.0.left/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837884695" />
+    <state width="1039" height="481" key="GridCell.Tab.0.right" timestamp="1652837884696">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="429" key="GridCell.Tab.1.left/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652014067852" />
-    <state width="1040" height="429" key="GridCell.Tab.1.right" timestamp="1652014067853">
+    <state width="1815" height="206" key="GridCell.Tab.0.right/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170683" />
+    <state width="1039" height="481" key="GridCell.Tab.0.right/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837884696" />
+    <state width="1039" height="662" key="GridCell.Tab.1.bottom" timestamp="1652837559103">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state width="1040" height="429" key="GridCell.Tab.1.right/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652014067853" />
-    <state x="76" y="365" key="SettingsEditor" timestamp="1651990591342">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1815" height="206" key="GridCell.Tab.1.bottom/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170684" />
+    <state width="1039" height="662" key="GridCell.Tab.1.bottom/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837559103" />
+    <state width="1039" height="662" key="GridCell.Tab.1.center" timestamp="1652837559103">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1815" height="206" key="GridCell.Tab.1.center/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170684" />
+    <state width="1039" height="662" key="GridCell.Tab.1.center/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837559103" />
+    <state width="1039" height="662" key="GridCell.Tab.1.left" timestamp="1652837559103">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1815" height="206" key="GridCell.Tab.1.left/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170684" />
+    <state width="1039" height="662" key="GridCell.Tab.1.left/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837559103" />
+    <state width="1039" height="662" key="GridCell.Tab.1.right" timestamp="1652837559103">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="1815" height="206" key="GridCell.Tab.1.right/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1652797170684" />
+    <state width="1039" height="662" key="GridCell.Tab.1.right/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652837559103" />
+    <state x="1961" y="760" key="SettingsEditor" timestamp="1652841176688">
+      <screen x="1920" y="0" width="1080" height="1890" />
     </state>
     <state x="76" y="365" key="SettingsEditor/0.0.1858.1080/1920.0.1080.1890@0.0.1858.1080" timestamp="1651990591342" />
-    <state x="1961" y="760" key="SettingsEditor/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1651739097615" />
+    <state x="1961" y="760" key="SettingsEditor/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652841176688" />
+    <state width="549" height="694" key="XDebugger.FullValuePopup" timestamp="1652452802344">
+      <screen x="1920" y="0" width="1080" height="1890" />
+    </state>
+    <state width="549" height="694" key="XDebugger.FullValuePopup/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652452802344" />
     <state x="2251" y="1038" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1652014898450">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
     <state x="2251" y="1038" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652014898450" />
-    <state x="2201" y="848" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1651736134876">
+    <state x="2201" y="848" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1652336098810">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state x="2201" y="848" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1651736134876" />
-    <state x="983" y="10" width="860" height="1166" key="dock-window-1" timestamp="1652008039735">
+    <state x="2201" y="848" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652336098810" />
+    <state x="1002" y="0" width="782" height="846" key="dock-window-1" timestamp="1652339779886">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="983" y="10" width="860" height="1166" key="dock-window-1/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652008039735" />
-    <state x="915" y="0" width="916" height="1166" key="dock-window-2" timestamp="1652012275176">
+    <state x="1002" y="0" width="782" height="846" key="dock-window-1/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652339779886" />
+    <state x="711" y="0" width="1041" height="1007" key="dock-window-2" timestamp="1652360008261">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="915" y="0" width="916" height="1166" key="dock-window-2/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652012275176" />
+    <state x="711" y="0" width="1041" height="1007" key="dock-window-2/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652360008261" />
     <state x="787" y="0" width="916" height="1166" key="dock-window-3" timestamp="1652015353521">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
@@ -294,38 +350,18 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="825" y="0" width="1031" height="1166" key="dock-window-4/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652063114689" />
-    <state x="2350" y="848" key="ftp.server.browser" timestamp="1651736037111">
+    <state x="2350" y="848" key="ftp.server.browser" timestamp="1652337218257">
       <screen x="1920" y="0" width="1080" height="1890" />
     </state>
-    <state x="2350" y="848" key="ftp.server.browser/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1651736037111" />
+    <state x="2350" y="848" key="ftp.server.browser/0.0.1858.1080/1920.0.1080.1890@1920.0.1080.1890" timestamp="1652337218257" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/inference_color.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>122</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/train.py</url>
-          <line>138</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/try-xml.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/ExtractTest.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -339,10 +375,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$inference.coverage" NAME="inference Coverage Results" MODIFIED="1651813216780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$xmldirs2masks.coverage" NAME="xmldirs2masks Coverage Results" MODIFIED="1652092309907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$try_xml.coverage" NAME="try-xml Coverage Results" MODIFIED="1652005937446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$inference_color.coverage" NAME="inference_color Coverage Results" MODIFIED="1651929737657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$try.coverage" NAME="try Coverage Results" MODIFIED="1651410147543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$train.coverage" NAME="train Coverage Results" MODIFIED="1651929875619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$zzq_xml2masks.coverage" NAME="zzq_xml2masks Coverage Results" MODIFIED="1652074661329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$zzq_xml2masks__1_.coverage" NAME="zzq_xml2masks (1) Coverage Results" MODIFIED="1652442988749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$try_xml.coverage" NAME="try-xml Coverage Results" MODIFIED="1652504954328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$collect_output_resize.coverage" NAME="collect_output_resize Coverage Results" MODIFIED="1652837884690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$xmldirs2masks__1_.coverage" NAME="xmldirs2masks (1) Coverage Results" MODIFIED="1652442905035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$inference_color.coverage" NAME="inference_color Coverage Results" MODIFIED="1652797170667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$train.coverage" NAME="train Coverage Results" MODIFIED="1652343487579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$zzq_xml2masks.coverage" NAME="zzq_xml2masks Coverage Results" MODIFIED="1652442949280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/unet_nested_multiple_classification$try.coverage" NAME="train Coverage Results" MODIFIED="1652604343834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

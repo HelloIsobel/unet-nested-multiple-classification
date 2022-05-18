@@ -58,20 +58,17 @@ class BasicDataset(Dataset):
 
         img = Image.open(img_path)
         mask = Image.open(mask_path)
-        mask = mask.convert("L")  #
+        mask = mask.convert("L")  # PIL图片 选取其 灰度模式
 
-        width, height = img.size
-        # 按比例缩小
-        img.thumbnail((width / 2, height / 2))
-        mask.thumbnail((width / 2, height / 2))
+        # width, height = img.size
+        # # 按比例缩小
+        # img.thumbnail((width / 2, height / 2))
+        # mask.thumbnail((width / 2, height / 2))
 
         assert img.size == mask.size, \
             f'Image and mask {img_name} should be the same size, but are {img.size} and {mask.size}'
 
         img = self.preprocess(img, self.scale)
         mask = self.preprocess(mask, self.scale)
-
-
-
 
         return {'image': torch.from_numpy(img), 'mask': torch.from_numpy(mask)}

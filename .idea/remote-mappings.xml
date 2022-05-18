@@ -10,6 +10,13 @@
             </list>
           </settings>
         </remote-mappings>
+        <remote-mappings server-id="python@sftp://zxy@101.37.163.116:22/home/zxy/.conda/envs/zxy/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/zxy/BoundaryRice/unet-nested-multiple-classification" />
+            </list>
+          </settings>
+        </remote-mappings>
       </list>
     </list>
   </component>

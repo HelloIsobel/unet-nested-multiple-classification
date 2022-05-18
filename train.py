@@ -11,7 +11,7 @@ import logging
 import os
 import os.path as osp
 import sys
-
+import time
 import numpy as np
 import torch
 import torch.nn as nn
@@ -48,11 +48,12 @@ def getExcel(features, excel_path, header=True):
     writer.close()
 
 
-def train_net(net, cfg):
+def train_net(net, cfg, path):
     dataset = BasicDataset(cfg.images_dir, cfg.masks_dir, cfg.scale)
 
     val_percent = cfg.validation / 100
     n_val = int(len(dataset) * val_percent)
+
     n_train = len(dataset) - n_val
     train, val = random_split(dataset, [n_train, n_val])
 
@@ -105,7 +106,7 @@ def train_net(net, cfg):
         criterion = LovaszLossHinge()
 
     best_loss = float("inf")
-    train_loss_value = []
+    train_loss_value, val_loss_value = [], []
 
     for epoch in range(cfg.epochs):
         net.train()
@@ -143,7 +144,7 @@ def train_net(net, cfg):
                 # __________________________________
                 if loss < best_loss:
                     best_loss = loss
-                    torch.save(net.state_dict(), "0501_bestmodel.pth")
+                    torch.save(net.state_dict(), path+"/bestmodel.pth")
 
                 epoch_loss += loss.item()
                 n += masks.shape[0]
@@ -184,7 +185,7 @@ def train_net(net, cfg):
                     else:
                         # writer.add_images('masks/true', batch_masks, global_step)
                         ids = inference_masks.shape[1]  # N x C x H x W
-                        inference_masks = torch.chunk(inference_masks, ids, dim=1)
+                        inference_masks = torch.chunk(inference_masks, ids, dim=1)  # torch.chunk是按列切割成ids个
                         for idx in range(0, len(inference_masks)):
                             inference_mask = torch.sigmoid(inference_masks[idx]) > cfg.out_threshold
                             writer.add_images('masks/inference_' + str(idx),
@@ -192,20 +193,25 @@ def train_net(net, cfg):
                                               global_step)
             train_loss = epoch_loss / n
             train_loss_value.append(train_loss)
+            val_loss_value.append(val_score)
 
-        excel_path = '0501excel_loss_train.xlsx'
-        getExcel(train_loss_value, excel_path, header=False)
+        excel_path1 = path + '/train_loss.xlsx'
+        getExcel(train_loss_value, excel_path1, header=False)
+
+        excel_path2 = path + '/val_loss.xlsx'
+        getExcel(val_loss_value, excel_path2, header=False)
 
         if cfg.save_cp:
             try:
-                os.mkdir(cfg.checkpoints_dir)
-                logging.info('Created checkpoint directory')
+                checkpoints_path =path + "/checkpoints"
+                os.makedirs(checkpoints_path)
+                logging.info('Created checkpoints directory')
             except OSError:
                 pass
 
             ckpt_name = 'epoch_' + str(epoch + 1) + '.pth'
             torch.save(net.state_dict(),
-                       osp.join(cfg.checkpoints_dir, ckpt_name))
+                       osp.join(checkpoints_path, ckpt_name))
             logging.info(f'Checkpoint {epoch + 1} saved !')
 
     writer.close()
@@ -214,7 +220,6 @@ def train_net(net, cfg):
 def eval_net(net, loader, device, n_val, cfg):
     """
     Evaluation without the densecrf with the dice coefficient
-
     """
     net.eval()
     tot = 0
@@ -259,18 +264,27 @@ def eval_net(net, loader, device, n_val, cfg):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+    check_dir = lambda d: None if os.path.exists(d) else os.makedirs(d)
+
+    time_str= time.strftime("%Y-%m-%d_%H-%M-%S", time.localtime())
+    train_path="./data/result/"+time_str
+    check_dir(train_path)
+
+    log_format = "%(asctime)s - %(levelname)s - %(message)s"
+
+    # logging.basicConfig(level=logging.INFO, format=log_format)  # TODO: 修改每次log文件名
+    logging.basicConfig(filename=train_path+"/logging.log", level=logging.INFO, format=log_format)  # TODO: 修改每次log文件名
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    # device = torch.device('cpu')
     logging.info(f'Using device {device}')  # logging 日志输出
 
-    net = eval(cfg.model)(cfg)  # eval() 函数用来执行一个字符串表达式，并返回表达式的值
+    net = eval(cfg.model)(cfg)  # 相当于：net=NestedUNet(cfg) 将"NestedUNet"去掉双引号，变成相应的类名
     logging.info(f'Network:\n'
                  f'\t{cfg.model} model\n'
                  f'\t{cfg.n_channels} input channels\n'
                  f'\t{cfg.n_classes} output channels (classes)\n'
                  f'\t{"Bilinear" if cfg.bilinear else "Dilated conv"} upscaling')
 
+    # pre-training model
     if cfg.load:
         net.load_state_dict(
             torch.load(cfg.load, map_location=device)
@@ -282,7 +296,7 @@ if __name__ == '__main__':
     # cudnn.benchmark = True
 
     try:
-        train_net(net=net, cfg=cfg)
+        train_net(net=net, cfg=cfg, path=train_path)
     except KeyboardInterrupt:
         '''
         命令行程序运行期间，如果用户想终止程序，一般都会采用Ctrl-C快捷键，这个快捷键会引发python程序抛出KeyboardInterrupt异常。

@@ -19,6 +19,7 @@ from torchvision import transforms
 from PIL import Image
 from tqdm import tqdm
 import cv2
+import time
 
 from unet import NestedUNet
 from unet import UNet
@@ -80,10 +81,10 @@ def get_args():
     #                     help='Directory of input images')
     # parser.add_argument('--output', '-o', dest='output', type=str, default='',
     #                     help='Directory of ouput images')
-    parser.add_argument('--model', '-m', default='0501_bestmodel.pth',
+    parser.add_argument('--model', '-m', default='./data/result/2022-05-15_16-45-44/bestmodel.pth',
                         metavar='FILE',
                         help="Specify the file in which the model is stored")
-    parser.add_argument('--input', '-i', dest='input', type=str, default='./data/test/input',
+    parser.add_argument('--input', '-i', dest='input', type=str, default='./data/test/images',
                         help='Directory of input images')
     parser.add_argument('--output', '-o', dest='output', type=str, default='./data/test/output_resize',
                         help='Directory of ouput images')
@@ -91,6 +92,9 @@ def get_args():
 
 
 if __name__ == "__main__":
+    start01 = time.perf_counter()
+    print("start time: {}".format(start01))
+
     args = get_args()
     input_imgs = os.listdir(args.input)
 
@@ -137,3 +141,6 @@ if __name__ == "__main__":
             output = cv2.addWeighted(img, 0.7, img_mask, 0.3, 0)
             cv2.imwrite(osp.join(output_img_dir, img_name), output)
 
+    end01 = time.perf_counter()
+    print("end time: {}".format(end01))
+    print("total time: {}".format(end01-start01))

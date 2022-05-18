@@ -4,6 +4,10 @@
 # 标注网址
 # http://101.37.163.116:6701
 # name：SiaIsobel  password:email
+"""
+！！本地运行！！
+"""
+
 
 import os
 import cv2
@@ -86,7 +90,7 @@ def parse_args():
            -- frame_000010.PNG
     """
     parser = argparse.ArgumentParser(fromfile_prefix_chars='@', description='Convert CVAT XML annotations to contours')
-    parser.add_argument('--data_dir', metavar='', type=str, default="./cvat_data",
+    parser.add_argument('--data_dir', metavar='', type=str, default="../cvat_data",
                         help='directory with input images')
     parser.add_argument('--color_flag', metavar='', type=str, default=True,
                         help='directory for output masks')

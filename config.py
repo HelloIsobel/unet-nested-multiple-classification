@@ -12,9 +12,10 @@ import os
 class UNetConfig:
 
     def __init__(self,
-                 epochs=50,  # Number of epochs
+                 epochs=100,  # Number of epochs
                  batch_size=1,  # Batch size
                  validation=10.0,  # Percent of the data that is used as validation (0-100)
+                 test=10.0,
                  out_threshold=0.5,
 
                  optimizer='SGD',
@@ -27,7 +28,7 @@ class UNetConfig:
 
                  n_channels=3,  # Number of channels in input images
                  n_classes=3,  # Number of classes in the segmentation
-                 scale=1,  # Downscaling factor of the images
+                 scale=0.5,  # Downscaling factor of the images
 
                  load=False,  # Load model from a .pth file
                  save_cp=True,
@@ -45,6 +46,7 @@ class UNetConfig:
         self.epochs = epochs
         self.batch_size = batch_size
         self.validation = validation
+        self.test = test
         self.out_threshold = out_threshold
 
         self.optimizer = optimizer

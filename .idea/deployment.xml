@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="zxy@101.37.163.116:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="zxy@101.37.163.116:22">
     <serverData>
       <paths name="zxy@101.37.163.116:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/zxy/unet-nested-multiple-classification" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/zxy/BoundaryRice/unet-nested-multiple-classification" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
